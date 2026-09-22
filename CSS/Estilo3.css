@@ -1,0 +1,2015 @@
+.resolucion {
+  width: 99%;
+}
+/**Escritorio**/
+@media (min-width: 991px) {
+  .tablet {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+header {
+
+    display: flex;
+
+    height: 50px;
+
+    background-color: #ffffff;
+
+    justify-content: space-between;
+
+    align-content: center;
+    align-items: center;
+
+    padding: 20px 0 10px;
+
+    margin: 0px;
+
+}
+
+user agent stylesheet
+
+header {
+
+    display: block;
+}
+
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+user agent stylesheet
+
+div {
+
+    display: block;
+
+}
+
+.logo img {
+
+    height: 50px;
+
+    padding: 10px;
+
+}
+
+
+
+nav {
+
+    display: block;
+
+}
+
+nav a {
+
+    font-size: 25px;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-position: center center;
+
+    transition: padding 1s ease 0s;
+
+
+
+}
+
+
+
+
+
+nav a:hover {
+
+    font-weight: bolder;
+
+    background-color: #36b3e5;
+
+    border-radius: 10px;
+
+    /* padding: 5px 20px; */
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.video {
+  float: right;
+  width: 318px;
+  border-radius: 10px;
+  transition: height 1s ease 0s, width 1s ease 0s;
+  margin: 0 0 0 20px;
+}
+
+.des4{
+  border-radius: 10px;
+  padding: 30px;
+  margin: 15px;
+  /* background-color: #; */
+}
+.tex2 {
+    font-size: 38px;
+    color: rgb(0, 0, 0);
+    background-color: #365ea8;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.img {
+  float: left;
+  transition: height 1s ease 0s, width 1s ease 0s;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+}
+.des5{
+  border-radius: 10px;
+  margin: 12px;
+  padding: 30px;
+}
+.tex2 {
+  font-size: 38px;
+  color: rgb(0, 0, 0);
+  background-color: #365ea8;
+  width: 250px;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.tex5 {
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  background-color: #365ea8;
+  width: 190px;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.tex4{
+  font-size: 25px;
+  color: #000000;
+}
+.cabecita {
+  /* background-color: #36b3e5; */
+  color: #000000;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+}
+.imga {
+  float: right;
+  transition: height 1s ease 0s, width 1s ease 0s;
+  border-radius: 10px;
+  margin: 0 0 0 20px;
+}.tex3 {
+  font-size: 23px;
+  border-radius: 10px; 
+  padding: 10px; 
+  text-align: justify;
+}
+.tex51{
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  background-color: #365ea8;
+  width: 390px;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 25%;
+  height: 330px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #365ea8;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #E2DA4A;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 75%;
+  border-left: none;
+  height: auto;
+  display: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+/* Style the tab */
+.tab1 {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 25%;
+  height: 400px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab1 button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Change background color of buttons on hover */
+
+.tab1 button:hover {
+  background-color: #365ea8;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Create an active/current "tab button" class */
+.tab1 button.active {
+  background-color: #E2DA4A;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Style the tab content */
+.tabcontent1 {
+  float: left;
+  padding: 0px 12px;
+  width: 75%;
+  border-left: none;
+  height: 400px;
+  display: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Clear floats after the tab */
+.clearfix1::after {
+  content: "";
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+/* Epic Separator CSS Edition */
+
+/* Style the tab */
+.tab2{
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 25%;
+  height: 330px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab2 button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #365ea8;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Create an active/current "tab button" class */
+.tab2 button.active {
+  background-color: #E2DA4A;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Style the tab content */
+.tabcontent2 {
+  float: left;
+  padding: 0px 12px;
+  width: 75%;
+  border-left: none;
+  height: 330px;
+  display: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Clear floats after the tab */
+.clearfix1::after {
+  content: "";
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.raw {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 0 30px 0;
+}
+.ladoa {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.ladob {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.ladoc {
+  -ms-flex: 25%; /* IE10 */
+  padding: 0 10px;
+  flex: 25%;  
+  box-sizing: border-box;
+}
+.ladod {
+  -ms-flex: 25%; /* IE10 */
+  padding: 0 10px;
+  flex: 25%;
+  box-sizing: border-box;
+}
+.aside {
+  background-color: #365ea8;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 75%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  text-align: left;
+}
+
+.modal2{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  text-align: left;
+}
+#n11{
+  color: #000000;
+  text-align: center;
+  font-size: 30px ;
+}
+#n12{
+  color: #E50505;
+  text-align: center;
+  font-size: 15px ;
+}
+.button {
+  background-color: #A8BCC6;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  
+}
+.modal-content {
+  background-color: #365ea8;
+  margin: auto;
+  padding: 20px;
+  width: 30%;
+}
+.cerrar {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #E2DA4A;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  
+  
+}
+
+.button2{
+  background-color: #E2DA4A;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  
+  
+}
+.modal-content2{
+  background-color: #365ea8;
+  margin: auto;
+  padding: 20px;
+  width: 40%;
+  border-radius: 10px;
+}
+.cerrar2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar2:hover,
+.cerrar2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal3{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  text-align: left;
+}
+.button3{
+  background-color: #E2DA4A;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  
+  
+}
+.modal-content3{
+  background-color: #365ea8;
+  margin: auto;
+  padding: 10px;
+  width: 30%;
+}
+.cerrar3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar3:hover,
+.cerrar3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal4{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  text-align: left;
+}
+.button4{
+  background-color: #E2DA4A;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  
+  
+}
+.modal-content4{
+  background-color: #365ea8;
+  margin: auto;
+  padding: 20px;
+  width: 30%;
+}
+.cerrar4{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar4:hover,
+.cerrar4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Footer de bolas GC*/
+
+.footeer{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(109, 108, 108);
+
+    border-radius: 500px;
+
+}
+
+.foote1{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px #444444a7;
+
+    border-radius: 50px;
+
+}
+
+.foote2{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(0, 0, 0, 0.607);
+
+    border-radius: 100px;
+
+}
+
+.foote3{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(0, 64, 255, 0.607);
+
+    border-radius: 100px;
+
+}
+
+.foote4{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(255, 0, 0, 0.436);
+
+    border-radius: 100px;
+
+}
+
+.foote5{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(190, 108, 0);
+
+    border-radius: 100px;
+
+}.foote6{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(251, 0, 255, 0.636);
+
+    border-radius: 100px;
+
+}
+
+.foote7{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px rgba(0, 255, 30, 0.372);
+
+    border-radius: 100px;
+
+}
+
+.foote8{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px rgba(9, 230, 255, 0.664);
+
+    border-radius: 100px;
+
+}
+
+.foote9{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px #36f8d2;
+    border-radius: 100px;
+
+}
+
+
+
+
+
+.pie-pagina{
+
+    width: 100%;
+
+
+    border-radius: 10px;
+
+}
+
+.pie-pagina .grupo-1{
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display:grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap:50px;
+
+    padding: 5px 0px;
+
+}
+
+.pie-pagina .grupo-1 .box figure{
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box figure img{
+
+    width: 250px;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 25px;
+
+    font-size: 20px;
+
+}
+
+.pie-pagina .grupo-1 .box p{
+
+    color: #000000;
+
+    margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a{
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    width: 45px;
+
+    height: 45px;
+
+    line-height: 45px;
+
+    color: rgb(0, 0, 0);
+
+    margin-right: 10px;
+
+    /* background-color: #868686; */
+
+    text-align: center;
+
+    transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+
+    color: #000000;
+
+}
+
+
+.pie-pagina .grupo-2{
+
+    /* background-color: #365ea8; */
+
+    padding: 15px 10px;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    height: 100%;
+
+
+
+}
+.subgrupo{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.pie-pagina .grupo-3 small{
+
+    font-size: 15px;
+
+}
+
+.pie-pagina .grupo-3{
+
+    background-color: #3cbaff;
+
+    padding: 15px 10px;
+
+    text-align: center;
+
+    color: #000000;
+
+    border-radius: 0 0 10px 10px;
+
+}
+
+/*
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
+*/
+
+}
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 990px) {
+  .desktop {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+
+  body{
+  
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .sidebar {
+
+    height: 100%;
+
+    width: 0;
+
+    position: fixed;
+
+    z-index: 200;
+
+    top: 0;
+
+    left: 0;
+
+    background-color: #365ea8;
+
+    overflow-x: hidden;
+
+    transition: 0.5s;
+
+    padding-top: 60px;
+
+  }
+
+
+
+    .sidebar a {
+
+        padding: 8px 8px 8px 32px;
+
+        text-decoration: none;
+
+        font-size: 70px;
+
+        color: #ffffff;
+
+        display: block;
+
+        transition: 0.3s;
+
+    }
+
+
+
+    .sidebar a:hover {
+
+        color: #365ea8;
+
+        font-size: 80px;
+
+    }
+
+
+
+  .sidebar .closebtn {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 25px;
+
+    margin-left: 50px;
+
+  }
+
+
+
+  .openbtn {
+
+    cursor: pointer;
+
+    color: white;
+
+    border: none;
+
+    background-color: #365ea8;
+
+    font-size: 100px;
+
+    border-radius: 10px;
+
+  }
+
+
+
+  .openbtn:hover {
+
+    background-color: #fdcd00;
+
+
+
+  }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+
+
+    header {
+
+      display: flex;
+  
+      height: 150px;
+  
+      background-color: #ffffff;
+  
+      justify-content: space-between;
+  
+      align-content: center;
+      align-items: center;
+  
+      padding: 20px 0 10px;
+  
+      margin: 0px;
+  
+  }
+  
+  user agent stylesheet
+  
+  header {
+  
+      display: block;
+  }
+  
+  
+  
+  .logo {
+  
+      display: flex;
+  
+      align-items: center;
+  
+  }
+  
+  user agent stylesheet
+  
+  div {
+  
+      display: block;
+  
+  }
+  
+  .logo img {
+  
+      height: 100px;
+  
+      padding: 10px;
+  
+  }
+  
+  
+  
+  nav {
+  
+      display: block;
+  
+  }
+  
+  nav a {
+  
+      font-size: 25px;
+  
+      border-radius: 10px;
+  
+      padding: 10px;
+  
+      background-position: center center;
+  
+      transition: padding 1s ease 0s;
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  nav a:hover {
+  
+      font-weight: bolder;
+  
+      background-color: #36b3e5;
+  
+      border-radius: 10px;
+  
+      /* padding: 5px 20px; */
+  
+  }
+  
+  a {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+    .video {
+      float: right;
+      width: 518px;
+      height: 191px;
+      border-radius: 10px;
+      transition: height 1s ease 0s, width 1s ease 0s;
+      margin: 0 0 0 20px;
+    }
+    
+    .des4{
+      border-radius: 10px;
+      padding: 30px;
+      margin: 15px;
+      /* background-color: #D5D5D5; */
+    }
+    .tex2 {
+        font-size: 38px;
+        color: rgb(0, 0, 0);
+        background-color: #365ea8;
+        width: 250px;
+        height: auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .img {
+      float: left;
+      transition: height 1s ease 0s, width 1s ease 0s;
+      border-radius: 10px;
+      margin: 0 20px 0 0;
+    }
+    .des5{
+      border-radius: 10px;
+      margin: 12px;
+      padding: 30px;
+    }
+    .tex2 {
+      font-size: 65px;
+      color: rgb(0, 0, 0);
+      background-color: #365ea8;
+      width: 350px;
+      height: auto;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .tex5 {
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      background-color: #365ea8;
+      width: 390px;
+      height: auto;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .tex4{
+      font-size: 25px;
+      color: #000000;
+    }
+    .cabecita {
+      /* background-color: #333333; */
+      color: #000000;
+      padding: 15px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin: 10px 0 10px 0;
+    }
+    
+    .imga {
+      float: right;
+      transition: height 1s ease 0s, width 1s ease 0s;
+      border-radius: 10px;
+      margin: 0 0 0 20px;
+    }
+    .tex3 {
+      font-size: 25px;
+      border-radius: 10px; 
+      padding: 10px; 
+      text-align: justify;
+    }
+    .tex31 {
+      font-size: 45px;
+      border-radius: 10px; 
+      padding: 10px; 
+      text-align: justify;
+    }
+    .tex51{
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      background-color: #365ea8;
+      width: 500px;
+      height: auto;
+      text-align: center;
+      border-radius: 10px;
+    }
+    
+    .tab4 {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 25%;
+      height: 330px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab4 button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 28px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab4 button:hover {
+      background-color: #365ea8;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Create an active/current "tab button" class */
+    .tab4 button.active {
+      background-color: #E2DA4A;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Style the tab content */
+    .tabcontent4 {
+      float: left;
+      padding: 0px 12px;
+      width: 75%;
+      border-left: none;
+      height: auto;
+      display: none;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Clear floats after the tab */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Epic Separator CSS Edition */
+    
+    /* Style the tab */
+    .tab5 {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 25%;
+      height: 400px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab5 button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 25px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Change background color of buttons on hover */
+    
+    .tab5 button:hover {
+      background-color: #365ea8;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Create an active/current "tab button" class */
+    .tab5 button.active {
+      background-color: #E2DA4A;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Style the tab content */
+    .tabcontent5 {
+      float: left;
+      padding: 0px 12px;
+      width: 75%;
+      border-left: none;
+      height: 400px;
+      display: none;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Clear floats after the tab */
+    .clearfix1::after {
+      content: "";
+      clear: both;
+      display: table;
+      box-sizing: border-box;
+      border-radius: 10px;
+      height: 350px;
+    }
+    /* Epic Separator CSS Edition */
+    
+    /* Style the tab */
+    .tab6{
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 25%;
+      height: 330px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab6 button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 25px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab6 button:hover {
+      background-color: #365ea8;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Create an active/current "tab button" class */
+    .tab6 button.active {
+      background-color: #E2DA4A;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Style the tab content */
+    .tabcontent6 {
+      float: left;
+      padding: 0px 12px;
+      width: 75%;
+      border-left: none;
+      height: 330px;
+      display: none;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    
+    /* Clear floats after the tab */
+    .clearfix1::after {
+      content: "";
+      clear: both;
+      display: table;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+    .raw {  
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      margin: 0 0 30px 0;
+    }
+    .ladoa {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .ladob {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .ladoc {
+      -ms-flex: 25%; /* IE10 */
+      padding: 0 10px;
+      flex: 25%;  
+      box-sizing: border-box;
+    }
+    .ladod {
+      -ms-flex: 25%; /* IE10 */
+      padding: 0 10px;
+      flex: 25%;
+      box-sizing: border-box;
+    }
+    .aside {
+  background-color: #365ea8;
+      padding: 15px;
+      color: #000000;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      box-sizing: border-box;
+      margin: 10px;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+    }
+    
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 75%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+    
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+      text-align: left;
+    }
+    
+    .modal2{
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+      text-align: left;
+    }
+    #n1{
+      color:#000000;
+      font-size: 50px;
+    }
+    #n2{
+      color:#000000;
+      font-size: 50px;
+    }
+    #n3{
+      color:#000000;
+      font-size: 50px;
+    }
+    #n4{
+      color:#000000;
+      font-size: 50px;
+    }
+
+    #n11{
+      color: #000000;
+      text-align: center;
+      font-size: 30px ;
+    }
+    #n12{
+      color: #E50505;
+      text-align: center;
+      font-size: 15px ;
+    }
+    
+    .modal5{
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+      text-align: left;
+    }
+    .button5 {
+      background-color: #fdcd00;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0.9;
+      font-size: 50px;
+    }
+    .modal-content5 {
+      background-color: #3cbaff;
+      margin: auto;
+      padding: 20px;
+      width: 80%;
+    }
+    .cerrar5 {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .cerrar5:hover,
+    .cerrar5:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .modal6{
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+      text-align: left;
+    }
+    
+    .button6 {
+      background-color: #fdcd00;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0.9;
+      
+      
+    }
+    
+    .button6{
+      background-color: #fdcd00;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0.9;
+      font-size: 50px;
+      
+      
+    }
+    .modal-content6{
+      background-color: #36b3e5;
+      margin: auto;
+      padding: 20px;
+      width: 80%;
+    }
+    .cerrar6 {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .cerrar6:hover,
+    .cerrar6:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .modal7{
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+      text-align: left;
+    }
+    .button7{
+      background-color: #fdcd00;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0.9;
+      font-size: 50px;
+      
+      
+    }
+    .modal-content7{
+      background-color: #36b3e5;
+      margin: auto;
+      padding: 20px;
+      width: 80%;
+    }
+    .cerrar7 {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .cerrar7:hover,
+    .cerrar7:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    
+    .modal8{
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+      text-align: left;
+    }
+    .button8{
+      background-color: #fdcd00;
+      color: #000000;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0.9;
+      font-size: 50px;
+      
+      
+    }
+    .modal-content8{
+      background-color: #36b3e5;
+      margin: auto;
+      padding: 20px;
+      width: 80%;
+    }
+    .cerrar8{
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .cerrar8:hover,
+    .cerrar8:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+/*Footer de bolas GC*/
+
+  
+.footeer{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(109, 108, 108);
+
+    border-radius: 500px;
+
+}
+
+.foote1{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px #444444a7;
+
+    border-radius: 50px;
+
+}
+
+.foote2{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(0, 0, 0, 0.607);
+
+    border-radius: 100px;
+
+}
+
+.foote3{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(0, 64, 255, 0.607);
+
+    border-radius: 100px;
+
+}
+
+.foote4{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(255, 0, 0, 0.436);
+
+    border-radius: 100px;
+
+}
+
+.foote5{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(190, 108, 0);
+
+    border-radius: 100px;
+
+}.foote6{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(251, 0, 255, 0.636);
+
+    border-radius: 100px;
+
+}
+
+.foote7{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px rgba(0, 255, 30, 0.372);
+
+    border-radius: 100px;
+
+}
+
+.foote8{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px rgba(9, 230, 255, 0.664);
+
+    border-radius: 100px;
+
+}
+
+.foote9{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px #36f8d2;
+    border-radius: 100px;
+
+}
+
+.pie-pagina .grupo-2{
+
+    /* background-color: #365ea8; */
+
+    padding: 15px 10px;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    height: 100%;
+
+
+
+}
+.subgrupo{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+.pie-pagina{
+
+  width: 100%;
+
+  /* background-color: #868686; */
+
+  border-radius: 10px;
+
+  text-align: center;
+
+}
+
+.pie-pagina .grupo-1{
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  display:grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap:50px;
+
+  padding: 5px 0px;
+
+}
+
+.pie-pagina .grupo-1 .box figure{
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box figure img{
+
+  width: 250px;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+
+  color: rgb(0, 0, 0);
+
+  margin-bottom: 25px;
+
+  font-size: 20px;
+
+}
+
+.pie-pagina .grupo-1 .box p{
+
+  color: #000000;
+
+  margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a{
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  width: 45px;
+
+  height: 45px;
+
+  line-height: 45px;
+
+  color: rgb(0, 0, 0);
+
+  margin-right: 10px;
+
+  /* background-color: #868686; */
+
+  text-align: center;
+
+  transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+
+  color: #365ea8;
+
+}
+
+
+.pie-pagina .grupo-2{
+
+    /* background-color: #365ea8; */
+
+    padding: 15px 10px;
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    height: 100%;
+
+
+
+}
+.subgrupo{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.pie-pagina .grupo-3 small{
+
+  font-size: 15px;
+
+}
+
+.pie-pagina .grupo-3{
+
+  background-color: #36b3e5;
+
+  padding: 15px 10px;
+
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+
+  border-radius: 0 0 10px 10px;
+
+}
+}
