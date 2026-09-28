@@ -1,0 +1,1534 @@
+.resolucion {
+  width: 99%;
+}
+/**Escritorio**/
+@media (min-width: 991px) {
+  .tablet {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+  body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 15px;
+}
+.row {  
+display: -ms-flexbox; /* IE10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
+box-sizing: border-box;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+-ms-flex: 40%; /* IE10 */
+flex: 40%;
+padding: 20px;
+box-sizing: border-box;
+}
+
+/* Main column */
+.main {   
+-ms-flex: 60%; /* IE10 */
+flex: 60%;
+padding: 30px 0 0 0;
+box-sizing: border-box;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+background-color: #aaa;
+width: 100%;
+padding: 20px;
+box-sizing: border-box;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row {   
+  flex-direction: column;
+box-sizing: border-box;
+}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+  float: none;
+  width: 100%;
+box-sizing: border-box;
+}
+}
+#contenedor {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+  padding: 8px 0;
+ }
+ 
+ #lateral {
+  width: 85%;  
+  border-radius: 10px;
+  height: 70px;
+  float: right;
+  align-items:center ;
+ }
+ 
+ #principal {
+  width: 14%;
+  float: left;
+  height: 70px;
+  border-radius: 10px;
+  align-items:center ;
+ }
+ #principal2 {
+  width: 14%;
+  float: left;
+  height: 70px;
+  border-radius: 10px;
+  align-items:center ;
+ }
+ #principal3{
+  width: 14%;
+  float: left;
+  height: 70px;
+  border-radius: 10px;
+  align-items:center ;
+ }
+ .clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+   align-items:center ;
+ }
+ .tet{
+  padding: 15px;
+  font-size: 20px;
+  align-items:center ;
+ }
+
+
+.columns1 {
+  float: left;
+  width: 37%;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+.columns2 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+.columns3 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tex5 {
+    font-size: 38px;
+    color: rgb(0, 0, 0);
+    height: auto;
+    text-align: center;
+}
+
+.parte {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Clearfix (clear floats) */
+.imaa::after {
+  content: "";
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+}
+
+header {
+
+  display: flex;
+
+  height: 50px;
+
+  background-color: #ffffff;
+
+  justify-content: space-between;
+
+  align-content: center;
+  align-items: center;
+
+  padding: 20px 0 10px;
+
+  margin: 0px;
+
+}
+
+user agent stylesheet
+
+header {
+
+  display: block;
+}
+
+
+
+.logo {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+user agent stylesheet
+
+div {
+
+  display: block;
+
+}
+
+.logo img {
+
+  height: 50px;
+
+  padding: 10px;
+
+}
+
+
+
+nav {
+
+  display: block;
+
+}
+
+nav a {
+
+  font-size: 25px;
+
+  border-radius: 10px;
+
+  padding: 10px;
+
+  background-position: center center;
+
+  transition: padding 1s ease 0s;
+
+
+
+}
+
+
+
+
+
+nav a:hover {
+
+  font-weight: bolder;
+
+  background-color: #36b3e5;
+
+  border-radius: 10px;
+
+  /* padding: 5px 20px; */
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ver{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #36b3e5;
+  color: #000000;
+}
+.social{
+  width: 100%;
+  height: 300px;
+}
+.capa {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background: rgba(0, 0, 0, 0);
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.ima{
+  border-radius: 10px;
+}
+input[type=submit] {
+  background-color: #365ea8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #868686;
+  border-radius: 10px;
+}
+
+/* Style the container/contact section */
+.conteni {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  margin-top: 6px;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#hero {
+min-height: 50vh;
+position: relative;
+}
+
+.des {
+  background-color: #36b3e5;
+  border-radius: 10px;
+  margin: 12px;
+  padding: 40px;
+}
+
+.principal1{
+  margin: 10px 0 10px 0;
+}
+.lado1 {
+  float: left;
+  width: 40%;
+  height: 450px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.lado2 {
+  float: left;
+  width: 60%;
+  height: 450px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.espacio::after {
+  content: "";
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.mapa {
+  text-align: center;
+  width: 100%;
+  height: 350px;
+  transition: height 1s ease 0s, width 1s ease 0s;
+  border-radius: 10px;  
+}
+.textmap{
+  background-color: #365ea8;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 2px;
+  color: #ffffff;
+  margin: 10px;
+}
+.principal2{
+  margin: 10px 0 10px 0;
+}
+.ladoa {
+  float: left;
+  width: 33%;
+  height: 650px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px 0;
+} 
+.ladob {
+  float: left;
+  width: 33%;
+  height: 650px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.ladoc {
+  float: left;
+  width: 33%;
+  height: 650px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+
+/*Footer de bolas GC*/
+
+.footeer{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(109, 108, 108);
+
+    border-radius: 500px;
+
+}
+
+.foote1{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px #444444a7;
+
+    border-radius: 50px;
+
+}
+
+.foote2{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(0, 0, 0, 0.1);
+
+    border-radius: 100px;
+
+}
+
+.foote3{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(0, 64, 255, 0.607);
+
+    border-radius: 100px;
+
+}
+
+.foote4{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(255, 0, 0, 0.436);
+
+    border-radius: 100px;
+
+}
+
+.foote5{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(190, 108, 0);
+
+    border-radius: 100px;
+
+}.foote6{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(251, 0, 255, 0.636);
+
+    border-radius: 100px;
+
+}
+
+.foote7{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px rgba(0, 255, 30, 0.372);
+
+    border-radius: 100px;
+
+}
+
+.foote8{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px rgba(9, 230, 255, 0.664);
+
+    border-radius: 100px;
+
+}
+
+.foote9{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px #36f8d2;
+    border-radius: 100px;
+
+}
+
+
+
+
+.pie-pagina{
+
+  width: 100%;
+
+
+  border-radius: 10px;
+
+}
+
+.pie-pagina .grupo-1{
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  display:grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap:50px;
+
+  padding: 5px 0px;
+
+}
+
+.pie-pagina .grupo-1 .box figure{
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box figure img{
+
+  width: 250px;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+
+  color: rgb(0, 0, 0);
+
+  margin-bottom: 25px;
+
+  font-size: 20px;
+
+}
+
+.pie-pagina .grupo-1 .box p{
+
+  color: #000000;
+
+  margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a{
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  width: 45px;
+
+  height: 45px;
+
+  line-height: 45px;
+
+  color: rgb(0, 0, 0);
+
+  margin-right: 10px;
+
+  /* background-color: #868686; */
+
+  text-align: center;
+
+  transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+
+  color: #000000;
+
+}
+
+
+.pie-pagina .grupo-2{
+
+    /* background-color: #365ea8; */
+
+    padding: 15px 10px;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    height: 100%;
+
+
+
+}
+.subgrupo{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.pie-pagina .grupo-3 small{
+
+  font-size: 15px;
+
+}
+
+.pie-pagina .grupo-3{
+
+  background-color: #3cbaff;
+
+  padding: 15px 10px;
+
+  text-align: center;
+
+  color: #000000;
+
+  border-radius: 0 0 10px 10px;
+
+}
+
+/*
+@media screen and (max-width:800px){
+.pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
+}
+}*/
+
+
+}
+
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 990px) {
+  .desktop {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+  
+body{
+  
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+  .row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  
+  /* Main column */
+  .main {   
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
+  padding: 30px 0 0 0;
+  box-sizing: border-box;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  box-sizing: border-box;
+  }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  box-sizing: border-box;
+  }
+  }
+  #contenedor {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    padding: 8px 0;
+   }
+   
+   #lateral {
+    width: 85%;  
+    border-radius: 10px;
+    height: 200px;
+    float: right;
+    align-items:center ;
+   }
+   
+   #principal {
+    width: 14%;
+    float: left;
+    height: 70px;
+    border-radius: 10px;
+    align-items:center ;
+   }
+   #principal2 {
+    width: 14%;
+    float: left;
+    height: 70px;
+    border-radius: 10px;
+    align-items:center ;
+   }
+   #principal3{
+    width: 14%;
+    float: left;
+    height: 70px;
+    border-radius: 10px;
+    align-items:center ;
+   }
+   .clearfix:after {
+     content: "";
+     display: table;
+     clear: both;
+     align-items:center ;
+   }
+   .tet{
+    font-size: 40px;
+    align-items:center ;
+   }
+  .formulario{
+    font-size: 50px;
+  }
+  
+  .columns1 {
+    float: left;
+    width: 37%;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+  }
+  .columns3 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+  }
+  .imagen1{
+    margin: 20px 0 0 0;
+  }
+  .imagen2{
+    margin: 50px 0 0 0;
+    }
+  .imagen3{
+    margin: 10px 0 0 0;    
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .tex5 {
+      font-size: 38px;
+      color: rgb(0, 0, 0);
+      height: auto;
+      text-align: center;
+  }
+  
+  .parte {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Clearfix (clear floats) */
+  .imaa::after {
+    content: "";
+    clear: both;
+    display: table;
+    box-sizing: border-box;
+  }
+  
+  .sidebar {
+
+    height: 100%;
+
+    width: 0;
+
+    position: fixed;
+
+    z-index: 200;
+
+    top: 0;
+
+    left: 0;
+
+    background-color: #365ea8;
+
+    overflow-x: hidden;
+
+    transition: 0.5s;
+
+    padding-top: 60px;
+
+  }
+
+
+
+    .sidebar a {
+
+        padding: 8px 8px 8px 32px;
+
+        text-decoration: none;
+
+        font-size: 70px;
+
+        color: #ffffff;
+
+        display: block;
+
+        transition: 0.3s;
+
+    }
+
+
+
+    .sidebar a:hover {
+
+        color: #365ea8;
+
+        font-size: 80px;
+
+    }
+
+
+
+  .sidebar .closebtn {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 25px;
+
+    margin-left: 50px;
+
+  }
+
+
+
+  .openbtn {
+
+    cursor: pointer;
+
+    color: white;
+
+    border: none;
+
+    background-color: #365ea8;
+
+    font-size: 100px;
+
+    border-radius: 10px;
+
+  }
+
+
+
+  .openbtn:hover {
+
+    background-color: #fdcd00;
+
+
+
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+
+  header {
+
+    display: flex;
+
+    height: 150px;
+
+    background-color: #ffffff;
+
+    justify-content: space-between;
+
+    align-content: center;
+    align-items: center;
+
+    padding: 20px 0 10px;
+
+    margin: 0px;
+
+}
+
+user agent stylesheet
+
+header {
+
+    display: block;
+}
+
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+user agent stylesheet
+
+div {
+
+    display: block;
+
+}
+
+.logo img {
+
+    height: 100px;
+
+    padding: 10px;
+
+}
+
+
+
+nav {
+
+    display: block;
+
+}
+
+nav a {
+
+    font-size: 25px;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-position: center center;
+
+    transition: padding 1s ease 0s;
+}
+
+nav a:hover {
+
+    font-weight: bolder;
+
+    background-color: #36b3e5;
+
+    border-radius: 10px;
+
+    /* padding: 5px 20px; */
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  .ver{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 46px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #365ea8;
+    color: #000000;
+  }
+  .social{
+    width: 100%;
+    height: 300px;
+  }
+  .capa {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .ima{
+    border-radius: 10px;
+  }
+  input[type=submit] {
+    background-color: #365ea8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+    border-radius: 10px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #868686;
+    border-radius: 10px;
+  }
+  
+  /* Style the container/contact section */
+  .conteni {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    margin-top: 6px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  #hero {
+  min-height: 20vh;
+  position: relative;
+  }
+  
+  .des {
+    background-color: #36b3e5;
+    border-radius: 10px;
+    margin: 12px;
+    padding: 40px;
+  }
+  
+  .principal1{
+    margin: 10px 0 10px 0;
+  }
+  .lado1 {
+    float: left;
+    width: 40%;
+    height: 450px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  .lado2 {
+    float: left;
+    width: 60%;
+    height: 450px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  .espacio::after {
+    content: "";
+    clear: both;
+    display: table;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .mapa {
+    text-align: center;
+    width: 100%;
+    height: 450px;
+    transition: height 1s ease 0s, width 1s ease 0s;
+    border-radius: 10px;  
+  }
+  .textmap{
+    background-color: #365ea8;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .principal2{
+    margin: 10px 0 10px 0;
+  }
+  .ladoa {
+    float: left;
+    width: 33%;
+    height: 650px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 0;
+  } 
+  .ladob {
+    float: left;
+    width: 33%;
+    height: 650px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  .ladoc {
+    float: left;
+    width: 33%;
+    height: 650px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+/*Footer de bolas GC*/
+
+.footeer{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(109, 108, 108);
+
+    border-radius: 500px;
+
+}
+
+.foote1{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px #444444a7;
+
+    border-radius: 50px;
+
+}
+
+.foote2{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(0, 0, 0, 0.607);
+
+    border-radius: 100px;
+
+}
+
+.foote3{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(0, 64, 255, 0.607);
+
+    border-radius: 100px;
+
+}
+
+.foote4{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(255, 0, 0, 0.436);
+
+    border-radius: 100px;
+
+}
+
+.foote5{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgb(190, 108, 0);
+
+    border-radius: 100px;
+
+}.foote6{
+
+    margin:0px 25px;
+
+    box-shadow: 0px 0px 50px 5px rgba(251, 0, 255, 0.636);
+
+    border-radius: 100px;
+
+}
+
+.foote7{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px rgba(0, 255, 30, 0.372);
+
+    border-radius: 100px;
+
+}
+
+.foote8{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px rgba(9, 230, 255, 0.664);
+
+    border-radius: 100px;
+
+}
+
+.foote9{
+
+    margin: 20px;
+
+    box-shadow: 0px 0px 50px 5px #36f8d2;
+    border-radius: 100px;
+
+}
+
+
+
+
+
+.pie-pagina{
+
+  width: 100%;
+
+  /* background-color: #868686; */
+
+  border-radius: 10px;
+
+  text-align: center;
+
+}
+
+.pie-pagina .grupo-1{
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  display:grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap:50px;
+
+  padding: 5px 0px;
+
+}
+
+.pie-pagina .grupo-1 .box figure{
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box figure img{
+
+  width: 250px;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+
+  color: rgb(0, 0, 0);
+
+  margin-bottom: 25px;
+
+  font-size: 20px;
+
+}
+
+.pie-pagina .grupo-1 .box p{
+
+  color: #000000;
+
+  margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a{
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  width: 45px;
+
+  height: 45px;
+
+  line-height: 45px;
+
+  color: rgb(0, 0, 0);
+
+  margin-right: 10px;
+
+  /* background-color: #868686; */
+
+  text-align: center;
+
+  transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+
+  color: #365ea8;
+
+}
+
+.pie-pagina .grupo-2{
+
+    /* background-color: #365ea8; */
+
+    padding: 15px 10px;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    height: 100%;
+
+
+
+}
+.subgrupo{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.pie-pagina .grupo-3 small{
+
+  font-size: 15px;
+
+}
+
+.pie-pagina .grupo-3{
+
+  background-color: #36b3e5;
+
+  padding: 15px 10px;
+
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+
+  border-radius: 0 0 10px 10px;
+
+}
+
+}
