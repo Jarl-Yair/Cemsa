@@ -138,6 +138,11 @@ a {
     font-size: 60px;
     font-family: 'Libre Baskerville', serif;
     font-weight: lighter;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0, 6);
 }
 
 .des0 {
@@ -280,7 +285,7 @@ a {
     border-radius: 10px 0 0 0;
 }
 
-text {
+.text {
     background-color: rgb(0, 0, 0);
     color: rgb(242, 242, 242);
     font-size: 35px;
@@ -462,14 +467,15 @@ text {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .parte {
         width: calc(50% - 8px);
 
     }
 }
 
-@media (min-width:992px){
-    .parte{
+@media (min-width:992px) {
+    .parte {
         width: calc(25% - 12px);
     }
 }
@@ -686,14 +692,16 @@ text {
     }
 
     .titulo {
-        font-size: 35px; /*Reducido para celular*/
+        font-size: 35px;
+        /*Reducido para celular*/
         text-align: center;
     }
 
     /*Soluciona que la imagen no se estire*/
     .enfoque {
         width: 100%;
-        height: auto; /*Hace que los textos no se encimen*/
+        height: auto;
+        /*Hace que los textos no se encimen*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -708,7 +716,8 @@ text {
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: column; /*Apila texto arriba e imagen abajo*/
+        flex-direction: column;
+        /*Apila texto arriba e imagen abajo*/
         align-items: center;
     }
 
@@ -745,7 +754,9 @@ text {
     }
 
     /*Hace que los textos no salgan de la pantalla*/
-    .des0, .des2, .des4 {
+    .des0,
+    .des2,
+    .des4 {
         padding: 10px 15px 30px 15px;
         width: auto;
     }
@@ -756,7 +767,9 @@ text {
         text-align: center;
     }
 
-    .tex, .texto0, .tex0 {
+    .tex,
+    .texto0,
+    .tex0 {
         font-size: 18px;
         text-align: left;
     }
@@ -780,7 +793,8 @@ text {
 
     .titulo2 {
         font-size: 35px;
-        margin-right: 0; /*Quita margenes que apretietan el textp*/
+        margin-right: 0;
+        /*Quita margenes que apretietan el textp*/
         text-align: center;
     }
 
@@ -799,12 +813,14 @@ text {
 
     /*Hace que el footer no se apachurre*/
     .pie-pagina .grupo-1 {
-        grid-template-columns: 1fr;  /*Pone las 3 secciones una bajo la otra*/
+        grid-template-columns: 1fr;
+        /*Pone las 3 secciones una bajo la otra*/
         text-align: center;
     }
 
     .subgrupo {
         height: auto;
-        flex-wrap: wrap;  /*Deja caer los iconos si no caben.*/
+        flex-wrap: wrap;
+        /*Deja caer los iconos si no caben.*/
     }
 }
