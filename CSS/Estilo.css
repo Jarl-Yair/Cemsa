@@ -397,7 +397,8 @@ text {
 .des4 {
     border-radius: 10px;
     margin: 12px;
-    padding: 60px;
+    padding: 20px 15px;
+    margin-bottom: 0;
 }
 
 .tex0 {
@@ -478,7 +479,8 @@ text {
 }
 
 #hero2 {
-    min-height: 100vh;
+    min-height: auto;
+    margin-top: 0;
     position: relative;
 }
 
@@ -491,11 +493,15 @@ text {
     background: url(../img/Fondo\ ipmc.png) no-repeat center;
     background-size: 100% 100%;
     justify-content: end;
+    background-position: center;
 }
 
 .columna-text2 {
     flex-basis: 55%;
     text-align: end;
+    background-color: rgb(255, 255, 255, 0.85);
+    border-radius: 15px;
+    margin: 10px;
     padding: 0 10px;
     z-index: 3;
     display: flex;
@@ -785,12 +791,14 @@ text {
         font-size: 35px;
         margin-right: 0; /*Quita margenes que apretietan el textp*/
         text-align: center;
+        color: #000;
     }
 
     .s2 {
         font-size: 18px;
-        margin: 20px 0;
-        text-align: center;
+        margin: 15px 0;
+        text-align: justify;
+        line-height: 1.5;
     }
 
     .ver {
