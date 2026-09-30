@@ -153,9 +153,12 @@ a {
 }
 
 .img {
-    float: right;
+    float: none;
+    display: block;
+    margin: 20px auto;
     transition: height 1s ease 0s, width 1s ease 0s;
     max-width: 100%;
+    width: 200px;
     height: auto;
 }
 
