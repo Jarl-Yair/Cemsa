@@ -285,26 +285,6 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.img-card {
-    background-color: var(--amarillo-claro);
-    color: var(--color-azul);
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    overflow: hidden;
-}
-
-.img-card img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-
 .card-servicio h3 {
     font-size: 1.4rem;
     color: var(--color-azul); 
@@ -819,11 +799,10 @@ nav a:hover {
     }
 
     /*Seccion del Hero*/
-    .hero {
-        text-align: center;
-        padding: 60px 5%;
-        height: auto;
-        min-height: 70vh;
+   .hero {
+        background-position: center; /* Centra la imagen para que no se enfoque solo en una esquina */
+        background-attachment: scroll; /* Evita que la imagen haga un zoom extremo en algunos celulares (especialmente iOS) */
+        min-height: 60vh; /* Reduce un poco la altura mínima para que la imagen se adapte mejor */
     }
     .hero-content {
         margin: 0 auto;
@@ -883,7 +862,7 @@ nav a:hover {
         font-size: 2.5rem;
     }
 
-    /* Contacto, Mapa y Globos*/
+    /* Contacto y Mapa */
     @media (max-width: 992px) {
     .contacto-grid {
         flex-direction: column;
@@ -902,10 +881,34 @@ nav a:hover {
         justify-content: center;
     }
 }
+    /* Footer 3 columnas*/
+    .footer-top-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
 
-.alianzas-fila-superior {
-        flex-direction: column; /* Apila el bloque izquierdo, central y derecho hacia abajo en móviles */
+    .footer-logo-img {
+        margin: 0 auto 15px auto; 
+    }
+
+    .footer-desc {
+        text-align: center;
+        margin: 0 auto 20px auto;
+    }
+
+     /* Footer 3 redes*/
+    .social-icons.vertical {
+        flex-direction: row; 
+        justify-content: center;
         gap: 20px;
+    }
+
+    /* Globos*/
+.alianzas-fila-superior {
+        flex-direction: column; 
     }
     .alianzas-bloque, .alianzas-fila-inferior {
         flex-wrap: wrap;
