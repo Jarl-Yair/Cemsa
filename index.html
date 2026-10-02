@@ -14,16 +14,19 @@
     <!--BARRA DE NAVEGACIÓN-->
     <header>
         <div class="logo-container">
-            <img src="img/logoCemsa.webp" alt="Logo CEMSA">
+            <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
         </div>
 
-        <nav>
+        <!--Botón de menu hamburguesa-->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Enlaces</a></li>
-                <li><a href="#">Conocenos</a></li>
+                <li><a href="#">Conócenos</a></li>
             </ul>
         </nav>
 
@@ -43,8 +46,12 @@
         <div class="bienvenidos-texto">
             <span class="etiqueta-texto">BIENVENIDOS</span>
             <h2>Soluciones que protegen y perduran</h2>
-            <p>En Coatings Especiales y Multifuncionales S.A. de C.V. (CEMSA), una empresa joven, dinámica y moderna, contamos con más de diez años de experiencia y altos estándares de calidad, con un firme compromiso por el servicio.</p>
-            <p>Nos dedicamos a la compra, venta, distribución y aplicación de recubrimientos industriales, arquitectónicos y automotrices, comprometidos con servicios cuyos costos y calidades son comparables o superiores a los de nuestros competidores.</p>
+            <p>En Coatings Especiales y Multifuncionales S.A. de C.V. (CEMSA), una empresa joven, dinámica y moderna,
+                contamos con más de diez años de experiencia y altos estándares de calidad, con un firme compromiso por
+                el servicio.</p>
+            <p>Nos dedicamos a la compra, venta, distribución y aplicación de recubrimientos industriales,
+                arquitectónicos y automotrices, comprometidos con servicios cuyos costos y calidades son comparables o
+                superiores a los de nuestros competidores.</p>
         </div>
     </section>
 
@@ -53,8 +60,10 @@
         <div class="servicios-cabecera">
             <span class="etiqueta-texto gris">NUESTROS SERVICIOS</span>
             <h2 class="titulo-seccion">¿Cómo podemos ayudarte?</h2>
-            <p class="subtitulo-seccion">Nos enfocamos en la compra, venta, distribución y aplicación de recubrimientos industriales, arquitectónicos y automotrices comprometidas con el desarrollo de servicios cuyos costos y calidades son comparables o superiores a los de nuestros competidores.</p>
-            
+            <p class="subtitulo-seccion">Nos enfocamos en la compra, venta, distribución y aplicación de recubrimientos
+                industriales, arquitectónicos y automotrices comprometidas con el desarrollo de servicios cuyos costos y
+                calidades son comparables o superiores a los de nuestros competidores.</p>
+
             <a href="servicios.html" class="btn-explorar btn-espaciado">Ver todos los servicios</a>
         </div>
 
@@ -63,25 +72,29 @@
             <div class="card-servicio">
                 <img src="img/Distribucion.webp" alt="CEMSA Distribución" class="img-destacada">
                 <h3>CEMSA</h3>
-                <p>Nos enfocamos en la compra, venta, distribución y aplicación de recubrimientos industriales, arquitectónicos y automotrices comprometidas con el desarrollo de servicios cuyos costos y calidades son comparables o superiores a los de nuestros competidores.</p>
+                <p>Nos enfocamos en la compra, venta, distribución y aplicación de recubrimientos industriales,
+                    arquitectónicos y automotrices comprometidas con el desarrollo de servicios cuyos costos y calidades
+                    son comparables o superiores a los de nuestros competidores.</p>
             </div>
-            
+
             <!--Tarjeta 2-->
             <div class="card-servicio">
                 <img src="img/Granallado.webp" alt="Sectores Económicos" class="img-destacada">
                 <h3>Sectores Económicos</h3>
-                <p>Comercializamos recubrimientos para industria civil, marina, petroquímica, energía, petróleo y gas, offshore e industria ferroviariamas y mas.</p>
+                <p>Comercializamos recubrimientos para industria civil, marina, petroquímica, energía, petróleo y gas,
+                    offshore e industria ferroviariamas y mas.</p>
             </div>
-            
+
             <!--Tarjeta 3-->
             <div class="card-servicio">
                 <div class="img-card">
                     <img src="https://cdn-icons-png.flaticon.com/512/2072/2072130.png" alt="Soluciones Integrales">
                 </div>
                 <h3>Soluciones Integrales</h3>
-                <p>Equipo técnico para aplicación en campo.<br>Equipo e Infraestructura para la aplicación de nuestros productos.</p>
+                <p>Equipo técnico para aplicación en campo.<br>Equipo e Infraestructura para la aplicación de nuestros
+                    productos.</p>
             </div>
-            
+
             <!--Tarjeta 4-->
             <div class="card-servicio">
                 <div class="img-card">
@@ -93,32 +106,33 @@
         </div>
     </section>
 
-   <!--SECCIÓN DE INFRAESTRUCTURA-->
+    <!--SECCIÓN DE PRODUCTOS-->
     <section class="infraestructura">
         <div class="infraestructura-header">
             <span class="etiqueta-texto gris">PRODUCTOS</span>
             <h2 class="titulo-seccion">CEMSA cuenta con excelentes productos</h2>
-            <p class="subtitulo-seccion">Encuentra aquí las mejores promociones y descuentos especiales que tenemos para nuestros clientes. Manejamos las mejores marcas y los precios más competitivos.
+            <p class="subtitulo-seccion">Encuentra aquí las mejores promociones y descuentos especiales que tenemos para
+                nuestros clientes. Manejamos las mejores marcas y los precios más competitivos.
             </p>
         </div>
 
         <div class="carrusel-grande">
             <div class="carrusel-slides">
-                <img src="img/sikkens1.webp" alt="sikkens" class="slide activa"> 
+                <img src="img/sikkens1.webp" alt="sikkens" class="slide activa">
                 <img src="img/wanda2.webp" alt="wanda" class="slide">
                 <img src="img/hempel2.webp" alt="Hempel" class="slide">
                 <img src="img/u-tech1.webp" alrt="U-Tech" class="slide">
                 <img src="img/internacional1.webp" alt="Internacional" class="slide">
             </div>
-            
-             <a href="productos.html" class="btn-explorar btn-espaciado">Ver todos los productos</a>
-            
+            <div class="centrar-boton">
+                <a href="productos.html" class="btn-explorar btn-espaciado">Ver todos los productos</a>
+            </div>
             <button class="btn-circular prev" onclick="moverCarrusel(-1)">❮</button>
             <button class="btn-circular next" onclick="moverCarrusel(1)">❯</button>
         </div>
     </section>
 
-    <!-- SECCIÓN DE NOVEDADES -->
+    <!--SECCIÓN DE SOCIOS-->
     <section class="novedades-texto">
         <h2 class="titulo-novedades">Socios Comerciales:</h2>
         <p>Contamos con socios comerciales para brindarte los mejores productos y de calidad.</p>
@@ -130,7 +144,9 @@
         <div class="identidad-content">
             <span class="etiqueta-identidad">IDENTIDAD PMC-PC</span>
             <h2>Conoce nuestra identidad<br>PMC-PC</h2>
-            <p>Abarcamos diferentes sectores de la industria, Nuestro compromiso es proporcionar soluciones a partir de sus necesidades, ofreciendo el recubrimiento optimo para alcanzar las propiedades y caracteristicas que requieres.</p>
+            <p>Abarcamos diferentes sectores de la industria, Nuestro compromiso es proporcionar soluciones a partir de
+                sus necesidades, ofreciendo el recubrimiento optimo para alcanzar las propiedades y caracteristicas que
+                requieres.</p>
             <a href="productos.html" class="btn-explorar">Solicita información →</a>
         </div>
     </section>
@@ -138,8 +154,9 @@
     <!-- SECCIÓN DE CONTACTO -->
     <section class="contacto-seccion" id="contacto">
         <h2 class="titulo-contacto">Encuentra solución a tu necesidad</h2>
-        <p class="subtitulo-contacto">Escríbenos o visítanos. Un asesor te ayudará a seleccionar el recubrimiento ideal y a cotizar tu proyecto sin compromiso.</p>
-        
+        <p class="subtitulo-contacto">Escríbenos o visítanos. Un asesor te ayudará a seleccionar el recubrimiento ideal
+            y a cotizar tu proyecto sin compromiso.</p>
+
         <div class="contacto-grid">
             <div class="contacto-info">
                 <div class="info-caja">
@@ -171,10 +188,12 @@
                     </div>
                 </div>
             </div>
-            
+
             <!--Mapa de Google-->
             <div class="contacto-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15026.0123456789!2d-99.1234567!3d19.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDM5JzE1LjYiTiA5OcKwMDcnMjQuNCJX!5e0!3m2!1ses-419!2smx!4v1610000000000!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15026.0123456789!2d-99.1234567!3d19.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDM5JzE1LjYiTiA5OcKwMDcnMjQuNCJX!5e0!3m2!1ses-419!2smx!4v1610000000000!5m2!1ses-419!2smx"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -182,22 +201,13 @@
     <!--SECCIÓN FOOTER-->
     <footer class="footer">
         <div class="footer-container">
-            
-            <!-- Fila Superior: Logo y Navegación -->
             <div class="footer-top-row">
-                <!-- Columna 1: Logo e Info -->
+                <!--Columna 1-->
                 <div class="footer-col">
-                    <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="footer-logo-img">
-                    <p class="footer-desc">Coatings Especiales y Multifuncionales S.A. de C.V. Comercialización, distribución y aplicación de recubrimientos industriales, arquitectónicos y automotrices.</p>
-                    <div class="social-icons">
-                        <a href="#">f</a>
-                        <a href="#">X</a>
-                        <a href="#">▶</a>
-                        <a href="#">IG</a>
-                    </div>
+                    <img src="img/Cemsapng.webp" alt="Logo CEMSA" class="footer-logo-img">
                 </div>
 
-                <!-- Columna 2: Navegación -->
+                <!--Columna 2-->
                 <div class="footer-col">
                     <h4>NAVEGACIÓN</h4>
                     <ul class="footer-links">
@@ -208,48 +218,83 @@
                         <li><a href="#">Novedades</a></li>
                     </ul>
                 </div>
+
+                <!--Columna 3-->
+                <div class="footer-col">
+                    <h4>SÍGUENOS</h4>
+                        <div class="social-icons vertical">
+                            <a href="" target="_blank" class="icono-red">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
+                                    alt="Facebook">
+                            </a>
+
+                            <a href="" target="_blank" class="icono-red">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
+                            </a>
+
+                            <a href="" target="_blank" class="icono-red">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                                    alt="YouTube">
+                            </a>
+
+                            <a href="" target="_blank" class="icono-red">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                                    alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Fila Inferior: Grupo CEMSA y Alianzas (Globos) -->
             <div class="footer-col alianzas-col">
                 <h4>NUESTRO GRUPO Y ALIANZAS</h4>
                 <div class="red-alianzas">
                     <div class="alianzas-fila-superior">
                         <div class="alianzas-bloque">
-                            <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank" class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
-                            <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank" class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
-                            <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank" class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
+                            <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
+                                class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
+                            <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
+                                class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
+                            <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
+                                class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
                         </div>
-                        
+
                         <div class="alianzas-centro">
-                            <a href="https://facebook.com/grupocemsa" target="_blank" class="alianza-logo alianza-principal glow-gris"><img src="img/GC22.webp" alt="GC Grupo CEMSA"></a>
+                            <a href="https://facebook.com/grupocemsa" target="_blank"
+                                class="alianza-logo alianza-principal glow-gris"><img src="img/GC22.webp"
+                                    alt="GC Grupo CEMSA"></a>
                         </div>
-                        
+
                         <div class="alianzas-bloque">
-                            <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank" class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
-                            <a href="https://www.facebook.com/nazareosac1" target="_blank" class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" alt="Nazareos AC"></a>
-                            <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank" class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
+                            <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
+                                class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
+                            <a href="https://www.facebook.com/nazareosac1" target="_blank"
+                                class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" alt="Nazareos AC"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
+                                class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
                         </div>
                     </div>
-                    
+
                     <div class="alianzas-fila-inferior">
-                        <a href="https://www.facebook.com/EPP-107946225493285" target="_blank" class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
-                        <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank" class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
-                        <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank" class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
+                        <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
+                            class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
+                        <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
+                            class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
+                            class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <!--CREDITOS-->
         <div class="footer-bottom">
-            <p>© 2026 CEMSA — Todos los derechos reservados.</p>
-            <p>Diseñado por JARL · Ing. Yair Maldonado · Lic. Karen Moreno</p>
+            <p>© Designed by JARL / Ing. Yair Maldonado / Lic. Karen Moreno - CEMSA 2026 Todos los Derechos Reservados.</p>
         </div>
     </footer>
-    
- <!--SCRIPT PARA EL FUNCIONAMIENTO DEL CARRUSEL-->
+
+    <!--SCRIPT PARA EL FUNCIONAMIENTO DEL CARRUSEL-->
     <script>
         let slideActual = 0;
         const slides = document.querySelectorAll('.slide');
@@ -259,6 +304,16 @@
             slideActual = (slideActual + direccion + slides.length) % slides.length;
             slides[slideActual].classList.add('activa');
         }
+
+        // FUNCIONAMIENTO DEL MENÚ HAMBURGUESA
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('activo');
+        });
     </script>
+
 </body>
+
 </html>

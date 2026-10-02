@@ -88,6 +88,20 @@ nav a:hover {
     background-color: #d1b140;
 }
 
+.logo-img {
+    max-height: 50px; 
+    width: auto;
+}
+
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--texto-oscuro);
+    cursor: pointer;
+}
+
 /*SECCION DEL HERO*/
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('img/Fondo.jpg') center/cover;
@@ -320,7 +334,7 @@ nav a:hover {
     
 }
 
-/*INFRAESTRUCTURA*/
+/*PRODUCTOS*/
 .infraestructura {
     padding: 80px 5%;
     max-width: 1200px;
@@ -363,6 +377,13 @@ nav a:hover {
     z-index: 1;
 }
 
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px; 
+}
+
 /* Botones blancos circulares */
 .btn-circular {
     position: absolute;
@@ -397,7 +418,7 @@ nav a:hover {
     right: 20px;
 }
 
-/*NOVEDADES*/
+/*SOCIOS*/
 .novedades-texto {
     padding: 80px 5%;
     max-width: 900px;
@@ -535,22 +556,23 @@ nav a:hover {
 .footer {
     background-color: var(--color-gris);
     color: var(--color-blanco);
-    padding: 60px 5% 20px;
+    padding: 60px 0 0px;
 }
 
 .footer-container {
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     gap: 60px; 
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: none;
 }
 
 .footer-top-row {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 40px;
 }
 
@@ -568,39 +590,39 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.footer-desc {
-    color: #060000;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    max-width: 500px; 
+.social-icons.vertical {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    align-items: flex-start;
 }
 
-.social-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.social-icons a {
-    display: flex;
+.icono-red {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--texto-oscuro);
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-    font-weight: bold;
+    width: 40px; 
+    height: 40px;
+    background-color: transparent; 
+    transition: transform 0.3s ease;
 }
 
-.social-icons a:hover {
-    background-color: var(--color-amarillo);
-    color: var(--texto-oscuro);
+.icono-red img {
+    width: 32px; 
+    height: 32px;
+    object-fit: contain; 
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-/*Columnas de enlaces y contacto*/
+.icono-red:hover {
+    transform: translateY(-3px);
+}
+
+.icono-red:hover img {
+    filter: brightness(1.15); 
+}
+
 .footer-links, .footer-contact, .footer-schedule {
     list-style: none;
     padding: 0;
@@ -649,13 +671,19 @@ nav a:hover {
 
 /*Créditos finales*/
 .footer-bottom {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    font-size: 0.85rem;
+   background-color: #38b6ff; 
     color: #000000; 
+    text-align: center;
+    padding: 15px 5%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 100%;
+    display: block; 
+    border-top: none;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
 
 /*ESTILO DE LOS GLOBOS*/
@@ -667,7 +695,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Espacio entre la fila de arriba y la de abajo */
+    gap: 15px;
     margin-top: 30px;
 }
 
@@ -675,18 +703,18 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px; /* Separación entre el bloque izquierdo, el centro y el derecho */
+    gap: 30px;
 }
 
 .alianzas-bloque {
     display: flex;
-    gap: 20px; /* Separación entre los globitos pequeños */
+    gap: 20px; 
 }
 
 .alianzas-fila-inferior {
     display: flex;
     justify-content: center;
-    gap: 25px; /* Separación de los 3 globitos de abajo */
+    gap: 25px; 
 }
 .alianza-logo {
     display: inline-block;
@@ -751,14 +779,33 @@ nav a:hover {
 @media (max-width: 768px) {
     /* Navbar*/
     header {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row; 
+        justify-content: space-between;
+        flex-wrap: wrap; 
         padding: 15px 5%;
     }
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+    .logo-img {
+        max-height: 40px; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+
+    nav {
+        width: 100%;
+        display: none; 
+        padding-top: 15px;
+    }
+
+    nav.activo {
+        display: block; 
+    }
+   nav ul {
+        flex-direction: column; 
+        width: 100%;
+        text-align: center;
+        gap: 20px;
     }
     .header-actions {
         width: 100%;
