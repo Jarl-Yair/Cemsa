@@ -1,0 +1,93 @@
+/*Intro de Productos */
+.intro-productos {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro-imagen img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(54, 94, 168, 0.15);
+}
+
+/*Tipos de Recubrimientos*/
+.grid-circulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+.img-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-circulo:hover .img-wrapper {
+    transform: translateY(-8px);
+}
+.btn-categoria {
+    background-color: var(--color-amarillo);
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/*Catálogo Acordeones*/
+.catalogo-acordeones {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.marca-acordeon {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.marca-acordeon summary {
+    background-color: #38b6ff; 
+    color: var(--color-blanco);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+    transition: background 0.3s ease;
+}
+.marca-acordeon summary:hover {
+    background-color: var(--color-azul); 
+}
+/*Grid interno de las cubetas de pintura*/
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: var(--color-blanco);
+    text-align: center;
+}
+.item-producto img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.item-producto:hover img {
+    transform: scale(1.1);
+}

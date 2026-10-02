@@ -1,14 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Productos
-    </title>
+    <title>Productos | CEMSA</title>
+    <!--Se carga vav footer y variables-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Nuevo diseño para productos-->
+    <link rel="stylesheet" href="productos.css">
 </head>
+
 <body>
-    
-    
+
+    <!--HEADER-->
+    <header>
+        <div class="logo-container">
+            <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
+        </div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Enlaces</a></li>
+                <li><a href="#">Conócenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--ENCABEZADO DE PRODUCTOS-->
+        <section class="intro-productos">
+            <div class="intro-texto">
+                <span class="etiqueta-texto">Catálogo</span>
+                <h1 class="titulo-seccion">Nuestros Productos</h1>
+                <p class="subtitulo-seccion">Encuentra aquí las mejores promociones y descuentos especiales que tenemos
+                    para nuestros clientes. Manejamos las mejores marcas y los precios más competitivos.</p>
+            </div>
+            <div class="intro-imagen">
+                <!-- Aquí va la img de las cubetas amontonadas -->
+                <img src="" alt="Catálogo de productos CEMSA">
+            </div>
+        </section>
+
+        <!-- 2. IDENTIDAD PMC-PC (Estilo hero oscuro)-->
+        <section class="identidad-hero pmc-hero">
+            <div class="identidad-content">
+                <span class="etiqueta-identidad">Sector Industrial</span>
+                <h2>Identidad PMC-PC</h2>
+                <p>Coatings Especiales y Multifuncionales S.A. de C.V. (CEMSA) en su segmento PMC-PC abarca diferentes
+                    sectores de la Industria, nuestro compromiso es proporcionar soluciones a partir de sus necesidades,
+                    ofreciendo el recubrimiento óptimo para alcanzar propiedades, características de operación y
+                    comportamiento en la superficie de aplicación logrando el éxito al cumplir las expectativas de
+                    nuestros clientes.
+                    Los avances tecnológicos nos han permitido que la industria de los recubrimientos mantenga una
+                    constante innovación, desarrollando recubrimientos comprometidos en su formulación o composición a
+                    dar soluciones a problemas específicos en las diferentes industrias.</p>
+            </div>
+        </section>
+
+        <!--IPOS DE RECUBRIMIENTOS (Grid de círculos)-->
+        <section class="tipos-recubrimientos">
+            <h2 class="titulo-seccion text-center">Tipos de recubrimientos</h2>
+
+            <div class="grid-circulos">
+                <!-- Tarjeta 1 -->
+                <div class="card-circulo">
+                    <div class="img-wrapper">
+                        <img src="" alt="Interior de Tanques">
+                    </div>
+                    <span class="btn-categoria">Interior de Tanques</span>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="card-circulo">
+                    <div class="img-wrapper">
+                        <img src="" alt="Alquíticos">
+                    </div>
+                    <span class="btn-categoria">Alquídicos</span>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="card-circulo">
+                    <div class="img-wrapper">
+                        <img src="" alt="Antiácidos">
+                    </div>
+                    <span class="btn-categoria">Antiácidos</span>
+                </div>
+            </div>
+        </section>
+
+        <!--CATÁLOGO POR MARCAS-->
+        <section class="catalogo-acordeones">
+            <h2 class="titulo-seccion text-center">Conoce los productos más solicitados</h2>
+
+            <!--Acordeón SIKKENS-->
+            <details class="marca-acordeon">
+                <summary>SIKKENS <span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <div class="item-producto">
+                        <img src="img/sikkens1.jpg" alt="Sikkens Autobase">
+                        <h4>Q040</h4>
+                        <p>Base Color Automotriz</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/sikkens2.jpg" alt="Sikkens Primer">
+                        <h4>AUTOSURFACER</h4>
+                        <p>Primario Automotriz</p>
+                    </div>
+                    <!-- Aca se agregaran mas cubetas SIKKENS-->
+                </div>
+            </details>
+
+            <!--Acordeón WANDA-->
+            <details class="marca-acordeon">
+                <summary>WANDA <span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <!--Cubetas WANDA-->
+                </div>
+            </details>
+
+            <!--Acordeón U-TECH-->
+            <details class="marca-acordeon">
+                <summary>U-TECH <span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <!--Cubetas U-TECH-->
+                </div>
+            </details>
+        </section>
+    </main>
+
+    <!--SECCIÓN FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top-row">
+                <!--Columna 1-->
+                <div class="footer-col">
+                    <img src="img/Cemsapng.webp" alt="Logo CEMSA" class="footer-logo-img">
+                </div>
+
+                <!--Columna 2-->
+                <div class="footer-col">
+                    <h4>NAVEGACIÓN</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Enlaces</a></li>
+                        <li><a href="#">Conocenos</a></li>
+                    </ul>
+                </div>
+
+                <!--Columna 3-->
+                <div class="footer-col">
+                    <h4>SÍGUENOS</h4>
+                    <div class="social-icons vertical">
+                        <a href="https://www.facebook.com/CEMSARecubrimientos#" target="_blank" class="icono-red">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
+                                alt="Facebook">
+                        </a>
+
+                        <a href="https://x.com/cemsamx?lang=es" target="_blank" class="icono-red">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
+                        </a>
+
+                        <a href="" target="_blank" class="icono-red">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                                alt="YouTube">
+                        </a>
+
+                        <a href="" target="_blank" class="icono-red">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                                alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-col alianzas-col">
+            <h4>NUESTRO GRUPO Y ALIANZAS</h4>
+            <div class="red-alianzas">
+                <div class="alianzas-fila-superior">
+                    <div class="alianzas-bloque">
+                        <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
+                            class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
+                        <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
+                            class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
+                        <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
+                            class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
+                    </div>
+
+                    <div class="alianzas-centro">
+                        <a href="https://facebook.com/grupocemsa" target="_blank"
+                            class="alianza-logo alianza-principal glow-gris"><img src="img/GC22.webp"
+                                alt="GC Grupo CEMSA"></a>
+                    </div>
+
+                    <div class="alianzas-bloque">
+                        <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
+                            class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
+                        <a href="https://www.facebook.com/nazareosac1" target="_blank"
+                            class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" alt="Nazareos AC"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
+                            class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
+                    </div>
+                </div>
+
+                <div class="alianzas-fila-inferior">
+                    <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
+                        class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
+                    <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
+                        class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
+                        class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!--CREDITOS-->
+        <div class="footer-bottom">
+            <p>© Designed by JARL / Ing. Yair Maldonado / Lic. Karen Moreno - CEMSA 2026 Todos los Derechos Reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!--Script para el menú de hamburguesa-->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('activo');
+        });
+    </script>
 </body>
+
 </html>
