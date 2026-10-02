@@ -808,15 +808,20 @@ nav a:hover {
 
     /*Seccion del Hero*/
    .hero {
-        background-position: center; /* Centra la imagen para que no se enfoque solo en una esquina */
-        background-attachment: scroll; /* Evita que la imagen haga un zoom extremo en algunos celulares (especialmente iOS) */
-        min-height: 60vh; /* Reduce un poco la altura mínima para que la imagen se adapte mejor */
+       height: auto !important; 
+        min-height: 60vh;
+        padding: 80px 5% !important; 
+        background-attachment: scroll !important; 
+        background-position: center !important;
     }
     .hero-content {
-        margin: 0 auto;
+        margin: 0;
+        width: 100%;
+        text-align: left;
     }
     .hero-content h2 {
         font-size: 2.2rem;
+        word-break: break-word;
     }
     .hero-content p {
         font-size: 1rem;
