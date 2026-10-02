@@ -104,7 +104,7 @@ nav a:hover {
 
 /*SECCION DEL HERO*/
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1790921507011-e9845f8edf4a?q=80&w=1580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('img/Hero1.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -117,6 +117,17 @@ nav a:hover {
 
 .hero-content {
     max-width: 600px;
+}
+
+.etiqueta {
+    display: inline-block;
+    border: 1px solid var(--color-amarillo);
+    color: var(--color-amarillo);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .hero-content h2 {
@@ -167,8 +178,6 @@ nav a:hover {
 }
 
 /*SECCION DE ESTADISTICAS*/
-
-
 .stat-item h3 {
     font-size: 3rem;
     color: var(--color-amarillo);

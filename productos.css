@@ -1,4 +1,4 @@
-/*Intro de Productos */
+/*Seccion de Productos */
 .intro-productos {
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
     box-shadow: 0 10px 30px rgba(54, 94, 168, 0.15);
 }
 
-/*Tipos de Recubrimientos*/
+/*Seccion recubrimientos*/
 .grid-circulos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
