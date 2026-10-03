@@ -1,93 +1,197 @@
-/*Seccion de Productos */
-.intro-productos {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 80px 5%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.intro-imagen img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(54, 94, 168, 0.15);
+
+/*HERO DE PRODUCTOS*/
+.hero-productos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('img/Hero2.webp');
 }
 
-/*Seccion recubrimientos*/
-.grid-circulos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    max-width: 1200px;
-    margin: 40px auto;
-    text-align: center;
-}
-.img-wrapper {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 20px auto;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-.img-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.card-circulo:hover .img-wrapper {
-    transform: translateY(-8px);
-}
-.btn-categoria {
-    background-color: var(--color-amarillo);
-    padding: 10px 25px;
-    border-radius: 20px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-/*Catálogo Acordeones*/
+/*CATÁLOGO DE MARCAS */
 .catalogo-acordeones {
     padding: 60px 5%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .marca-acordeon {
     margin-bottom: 15px;
     border-radius: 8px;
     overflow: hidden;
+    background-color: var(--color-blanco);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
+
+/* La barra azul que funciona como botón */
 .marca-acordeon summary {
     background-color: #38b6ff; 
     color: var(--color-blanco);
-    padding: 15px 30px;
+    padding: 18px 30px;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    list-style: none; 
+    list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     transition: background 0.3s ease;
 }
+
 .marca-acordeon summary:hover {
     background-color: var(--color-azul); 
 }
-/*Grid interno de las cubetas de pintura*/
+
+/* Ocultar la flecha nativa en navegadores Safari/Chrome */
+.marca-acordeon summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Cuadrícula interna donde irán las cubetas de pintura */
 .grid-productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 25px; 
     padding: 40px 20px;
     background-color: var(--color-blanco);
     text-align: center;
 }
+
+.item-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+}
+
 .item-producto img {
-    width: 120px;
+    width: 100%;
+    max-width: 160px;
     height: auto;
+    object-fit: contain;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
+
 .item-producto:hover img {
     transform: scale(1.1);
+}
+
+.item-producto h4 {
+    color: var(--color-azul);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.item-producto p {
+    color: var(--texto-gris);
+    font-size: 0.85rem;
+}
+
+/* TIPOS DE RECUBRIMIENTOS */
+.tipos-recubrimientos {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-globitos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 30px; 
+    margin-top: 50px;
+    text-align: center;
+}
+
+.item-globito {
+    background-color: transparent;
+    width: 320px; 
+}
+
+/* El botón y la foto funcionan como el interruptor del acordeón */
+.item-globito summary {
+    list-style: none; 
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; 
+    transition: transform 0.3s ease;
+}
+
+.item-globito summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Efecto de elevación al pasar el mouse (hover) */
+.item-globito summary:hover {
+    transform: translateY(-8px);
+}
+
+/* Botón amarillo de la categoría */
+.btn-categoria {
+    background-color: var(--color-amarillo); 
+    color: var(--texto-oscuro); 
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 260px;
+}
+
+/* Contenedor circular perfecto para la foto */
+.circulo-img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--color-blanco);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.circulo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* La caja de texto que aparece al hacer clic */
+.info-desplegable {
+    background-color: var(--color-blanco);
+    border: 1px solid #eaeaea;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    color: var(--texto-gris);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+    /* Animación de entrada suave */
+    animation: deslizarAbajo 0.4s ease-out forwards;
+}
+
+/*Diseño responsivo*/
+
+/* PRODUCTOS*/
+
+@media (max-width: 768px) {
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .item-producto img {
+        max-width: 130px;
+    }
+}
+@keyframes deslizarAbajo {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

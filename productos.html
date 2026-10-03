@@ -5,49 +5,262 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos | CEMSA</title>
-    <!--Se carga vav footer y variables-->
-    <link rel="stylesheet" href="styles.css">
-    <!--Nuevo diseño para productos-->
-    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="styles.css"> <!--Hereda diseño base-->
+    <link rel="stylesheet" href="productos.css"> <!--CSS extra-->
 </head>
 
 <body>
 
-    <!--HEADER-->
+    <!--BARRA DE NAVEGACIÓN-->
     <header>
         <div class="logo-container">
             <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
         </div>
         <button class="menu-toggle" id="menu-toggle">☰</button>
+
         <nav id="nav-menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="#">Enlaces</a></li>
-                <li><a href="#">Conócenos</a></li>
+                <li><a href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
+        <div class="header-actions">
+        </div>
     </header>
-
     <main>
-        <!--SECCION PRODUCTOS-->
-        <section class="intro-productos">
-            <div class="intro-texto">
-                <span class="etiqueta-texto">Catálogo</span>
-                <h1 class="titulo-seccion">Nuestros Productos</h1>
-                <p class="subtitulo-seccion">Encuentra aquí las mejores promociones y descuentos especiales que tenemos
-                    para nuestros clientes. Manejamos las mejores marcas y los precios más competitivos.</p>
-            </div>
-            <div class="intro-imagen">
-                <img src="" alt="Catálogo de productos CEMSA">  <!-- Aquí va la img de las-->
+        <!--HERO DE PRODUCTOS-->
+        <section class="hero hero-productos">
+            <div class="hero-content">
+                <div class="etiqueta">Productos</div>
+                <h1>Encuentra aquí las mejores promociones y descuentos especiales que tenemos para nuestros clientes.
+                    Manejamos las mejores marcas y los precios más competitivos.</h1>
             </div>
         </section>
 
-        <!--SECCION IDENTIDAD PMC-PC-->
-        <section class="identidad-hero pmc-hero">
+        <!--ACORDEÓN DE MARCAS-->
+        <section class="catalogo-acordeones" style="margin-top: 60px;">
+            <h2 class="titulo-seccion text-center">Conoce los productos más solicitados</h2>
+            <!-- Acordeón SIKKENS -->
+            <details class="marca-acordeon">
+                <summary>SIKKENS <span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <div class="item-producto">
+                        <img src="img/Sik1.webp" alt="Sikkens Q040">
+                        <h4>Q040</h4>
+                        <p>BASE COLOR AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/Sik2.webp" alt="Sikkens Autosurfacer">
+                        <h4>AUTOSURFACER</h4>
+                        <p>PRIMARIO AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/Sik3.webp" alt="Sikkens Washprimer">
+                        <h4>WASHPRIMER 1K CF</h4>
+                        <p>PRIMARIO AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/Sik4.webp" alt="Sikkens Autoclear">
+                        <h4>AUTOCLEAR HS</h4>
+                        <p>TRANSPARENTE AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/Sik5.webp" alt="Sikkens Pro Air">
+                        <h4>PRO AIR CLEAR</h4>
+                        <p>TRANSPARENTE AUTOMOTRIZ</p>
+                    </div>
+                </div>
+            </details>
+            <!-- Acordeón WANDA -->
+            <details class="marca-acordeon">
+                <summary>WANDA<span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <div class="item-producto">
+                        <img src="img/W1.webp" alt="Wanda Producto 1">
+                        <h4>WANDA BASE</h4>
+                        <p>BASE COLOR AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/W2.webp" alt="Wanda Producto 2">
+                        <h4>8100</h4>
+                        <p>PRIMARIO AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/W3.webp" alt="Wanda Producto 3">
+                        <h4>5100</h4>
+                        <p>TRANSPARENTE AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/W4.webp" alt="Wanda Producto 4">
+                        <h4>PU</h4>
+                        <p>POLIURETANO AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/W5.webp" alt="Wanda Producto 5">
+                        <h4>WANDA FILLER</h4>
+                        <p>PRIMARIO AUTOMOTRIZ</p>
+                    </div>
+                </div>
+            </details>
+            <!-- Acordeón U-TECH -->
+            <details class="marca-acordeon">
+                <summary>U-TECH<span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <div class="item-producto">
+                        <img src="img/U1.webp" alt="U-Tech Producto 1">
+                        <h4>U500</h4>
+                        <p>POLIURETANO AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/U2.webp" alt="U-Tech Producto 2">
+                        <h4>U350</h4>
+                        <p>POLIURETANO AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/U3.webp" alt="U-Tech Producto 3">
+                        <h4>4.0</h4>
+                        <p>TRANSPARENTE AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/U4.webp" alt="U-Tech Producto 4">
+                        <h4>2K100</h4>
+                        <p>PRIMARIO AUTOMOTRIZ</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/U5.webp" alt="U-Tech Producto 5">
+                        <h4>E250</h4>
+                        <p>PRIMARIO AUTOMOTRIZ</p>
+                    </div>
+                </div>
+            </details>
+            <!-- Acordeón INTERNATIONAL -->
+            <details class="marca-acordeon">
+                <summary>INTERNATIONAL<span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <div class="item-producto">
+                        <img src="img/I1.webp" alt="International Producto 1">
+                        <h4>INTERTHANE 990</h4>
+                        <p>ACABADO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/I2.webp" alt="International Producto 2">
+                        <h4>INTERSEAL 670HS</h4>
+                        <p>INTERMEDIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/I3.webp" alt="International Producto 3">
+                        <h4>INTERZINC 22HS</h4>
+                        <p>PRIMARIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/I4.webp" alt="International Producto 4">
+                        <h4>INTERZINC 52</h4>
+                        <p>PRIMARIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/I5.webp" alt="International Producto 5">
+                        <h4>INTERTHERM 50</h4>
+                        <p>ALTA TEMPERATURA INDUSTRIAL</p>
+                    </div>
+                </div>
+            </details>
+            <!-- Acordeón HEMPEL -->
+            <details class="marca-acordeon">
+                <summary>HEMPEL<span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <div class="item-producto">
+                        <img src="img/H1.webp" alt="Hempel Producto 1">
+                        <h4>HEMPATHANE 55610</h4>
+                        <p>ACABADO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/H2.webp" alt="Hempel Producto 2">
+                        <h4>HEMPADUR MASTIC 45880</h4>
+                        <p>INTERMEDIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/H3.webp" alt="Hempel Producto 3">
+                        <h4>GALVOSIL 15700</h4>
+                        <p>PRIMARIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/H4.webp" alt="Hempel Producto 4">
+                        <h4>HEMPEL SILICONE 56913</h4>
+                        <p>ALTA TEMPERATURA INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/H5.webp" alt="Hempel Producto 5">
+                        <h4>HEMPADUR 85671</h4>
+                        <p>INT. DE TANQUES INDUSTRIAL</p>
+                    </div>
+                </div>
+            </details>
+            <!--Acordeón PPG-->
+            <details class="marca-acordeon">
+                <summary>PPG<span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <div class="item-producto">
+                        <img src="img/P1.webp" alt="PPG Producto 1">
+                        <h4>AMERSHIELD</h4>
+                        <p>ACABADO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/P2.webp" alt="PPG Producto 2">
+                        <h4>AMERCOAT 400</h4>
+                        <p>INTERMEDIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/P3.webp" alt="PPG Producto 3">
+                        <h4>DIMECOTE 9</h4>
+                        <p>PRIMARIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/P4.webp" alt="PPG Producto 4">
+                        <h4>HITEMP 1027</h4>
+                        <p>ALTA TEMPERATURA INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/P5.webp" alt="PPG Producto 5">
+                        <h4>NOVAGUARD 840</h4>
+                        <p>INT. DE TANQUES INDUSTRIAL</p>
+                    </div>
+                </div>
+            </details>
+            <!-- Acordeón SHERWIN WILLIAMS -->
+            <details class="marca-acordeon">
+                <summary>SHERWIN WILLIAMS <span class="icono-despliegue">+</span></summary>
+                <div class="contenido-acordeon grid-productos">
+                    <div class="item-producto">
+                        <img src="img/S1.webp" alt="Sherwin Producto 1">
+                        <h4>ACROLON</h4>
+                        <p>ACABADO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/S2.webp" alt="Sherwin Producto 2">
+                        <h4>MACROPOXI</h4>
+                        <p>INTERMEDIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/S3.webp" alt="Sherwin Producto 3">
+                        <h4>ZINC CLAD II</h4>
+                        <p>PRIMARIO INDUSTRIAL</p>
+                    </div>
+                    <div class="item-producto">
+                        <img src="img/S4.webp" alt="Sherwin Producto 4">
+                        <h4>EPO-THEN</h4>
+                        <p>INT. DE TANQUES INDUSTRIAL</p>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <!--IDENTIDAD PMC-PC-->
+        <section class="identidad-hero" id="identidad-pmc">
             <div class="identidad-content">
-                <span class="etiqueta-identidad">Sector Industrial</span>
+                <span class="etiqueta-identidad">SECTOR INDUSTRIAL</span>
                 <h2>Identidad PMC-PC</h2>
                 <p>Coatings Especiales y Multifuncionales S.A. de C.V. (CEMSA) en su segmento PMC-PC abarca diferentes
                     sectores de la Industria, nuestro compromiso es proporcionar soluciones a partir de sus necesidades,
@@ -60,180 +273,273 @@
             </div>
         </section>
 
-        <!--SECCION RECUBRIMIENTOS-->
+        <!--TIPOS DE RECUBRIMIENTOS-->
         <section class="tipos-recubrimientos">
-            <h2 class="titulo-seccion text-center">Tipos de recubrimientos</h2>
+            <h2 class="titulo-seccion text-center">Tipos de recubrimientos:</h2>
+            <div class="grid-globitos">
+                <!-- Globito 1: Interior de Tanques -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Interior de Tanques</span>
+                        <div class="circulo-img">
+                            <img src="img/tanques.webp" alt="Interior de Tanques">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Es un recubrimiento de protección ultraduradero con alto desempeño para tanques de
+                            almacenamiento de todo tipo de productos químicos en las refinerías, instalaciones
+                            petroquímicas, terminales, almacenes de despachos, estaciones de energía, etc.</p>
+                    </div>
+                </details>
 
-            <div class="grid-circulos">
-                <!--Tarjeta 1-->
-                <div class="card-circulo">
-                    <div class="img-wrapper">
-                        <img src="" alt="Interior de Tanques">
+                <!-- Globito 2: Alquídicos -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Alquídicos</span>
+                        <div class="circulo-img">
+                            <img src="img/alquilicos.webp" alt="Alquídicos">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Son recubrimientos con buena retención de brillo y resistencia a medios ambientes secos o
+                            húmedos, sin salinidad o gases corrosivos; presenta buena adherencia, tolera cierto grado de
+                            impurezas en la superficie, por lo que con frecuencia es suficiente con una limpieza manual.
+                            Seca por evaporación de solventes e interacción con el aire.</p>
                     </div>
-                    <span class="btn-categoria">Interior de Tanques</span>
-                </div>
-                <!--Tarjeta 2-->
-                <div class="card-circulo">
-                    <div class="img-wrapper">
-                        <img src="" alt="Alquíticos">
+                </details>
+
+                <!-- Globito 3: Antiácidos -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Antiácidos</span>
+                        <div class="circulo-img">
+                            <img src="img/antiacidos.webp" alt="Antiácidos">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Son recubrimientos de ester de vinilo que contiene escamas con una resistencia excelente a
+                            soluciones de ácidos e inorgánicos y muchos disolventes alifáticos.</p>
                     </div>
-                    <span class="btn-categoria">Alquídicos</span>
-                </div>
-                <!--Tarjeta 3-->
-                <div class="card-circulo">
-                    <div class="img-wrapper">
-                        <img src="" alt="Antiácidos">
+                </details>
+
+                <!-- Globito 4: Vinílicos y Acrílicos -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Vinílicos y Acrílicos</span>
+                        <div class="circulo-img">
+                            <img src="img/Vinílicos y Acrílicos.webp" alt="Vinílicos y Acrílicos">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Son recubrimientos de fácil aplicación (con brocha o rodillo). Están compuestas por una
+                            resina sintética (a base de polímeros) que se halla emulsionada. Son perfectamente lavables
+                            y su limpieza es sencilla (utilizando agua y jabón).</p>
                     </div>
-                    <span class="btn-categoria">Antiácidos</span>
-                </div>
+                </details>
+
+                <!-- Globito 5: Anticorrosivos -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Anticorrosivos</span>
+                        <div class="circulo-img">
+                            <img src="img/Anticorrosivos.webp" alt="Anticorrosivos">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Los recubrimientos anticorrosivos se definen como la mezcla o dispersión relativamente
+                            estable de un pigmento en una solución de resinas y aditivos.</p>
+                    </div>
+                </details>
+
+                <!-- Globito 6: Anti-vegetativos -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Anti-vegetativos</span>
+                        <div class="circulo-img">
+                            <img src="img/Anti-vegetativos.webp" alt="Anti-vegetativos">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Es un recubrimiento desarrollado para prevenir el crecimiento de organismos marinos en
+                            superficies sumergidas por largos periodos. En su formulación se incluyen resinas vinílicas,
+                            brea, cobre o tóxico órgano-metálico que permiten esta acción de inhibición.</p>
+                    </div>
+                </details>
+
+                <!-- Globito 7: PEMEX y CFE -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">PEMEX y CFE</span>
+                        <div class="circulo-img">
+                            <img src="img/PEMEX y CFE.webp" alt="PEMEX y CFE">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Contamos con recubrimientos de alto desempeño que cumplen con las especificaciones y normas
+                            requeridas por estas dependencias.</p>
+                    </div>
+                </details>
+
+                <!-- Globito 8: Obra Civil -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Obra Civil</span>
+                        <div class="circulo-img">
+                            <img src="img/Obra Civil.webp" alt="Obra Civil">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Son recubrimientos que garantizan la correcta interacción entre acero y concreto creando un
+                            proceso de adherencia que ayuda a que el acero refuerce las diferentes estructuras ,haciendo
+                            que el concreto, cree una capa pasiva alrededor del mismo que lo protege de gases ó líquidos
+                            que previene la corrosión.</p>
+                    </div>
+                </details>
+
+                <!-- Globito 9: Automotrices -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Automotrices</span>
+                        <div class="circulo-img">
+                            <img src="img/Automotrices.webp" alt="Automotrices">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Son recubrimientos a base de resinas nitrocelulósicas y sintéticas que le confieren a la
+                            película excelente brillo y acabado, formando una película de alta dureza, flexible y de
+                            secado rápido.</p>
+                    </div>
+                </details>
+
+                <!-- Globito 10: Contrafuego -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Contrafuego</span>
+                        <div class="circulo-img">
+                            <img src="img/Contrafuego.webp" alt="Contrafuego">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Son recubrimientos que disminuyen el incremento de la temperatura, por efecto del fuego,
+                            implica una gran reducción en la capacidad resistente de las zonas de aplicación.</p>
+                    </div>
+                </details>
+
+                <!-- Globito 11: Epóxicos -->
+                <details class="item-globito">
+                    <summary>
+                        <span class="btn-categoria">Epóxicos</span>
+                        <div class="circulo-img">
+                            <img src="img/Epóxicos.webp" alt="Epóxicos">
+                        </div>
+                    </summary>
+                    <div class="info-desplegable">
+                        <p>Son recubrimientos que ofrecen una resistencia excelente a la corrosión, los químicos y la
+                            abrasión, además de adhesión y una película de gran dureza, en términos generales el nivel
+                            de adherencia, dureza, flexibilidad y resistencia. Puede aplicarse sobre superficies de
+                            concreto, metálicas, galvanizadas o inorgánicas de zinc.</p>
+                    </div>
+                </details>
             </div>
         </section>
 
-        <!--CATÁLOGO DE MARCAS-->
-        <section class="catalogo-acordeones">
-            <h2 class="titulo-seccion text-center">Conoce los productos más solicitados</h2>
-
-            <!--Acordeón SIKKENS-->
-            <details class="marca-acordeon">
-                <summary>SIKKENS <span class="icono-despliegue">+</span></summary>
-                <div class="contenido-acordeon grid-productos">
-                    <div class="item-producto">
-                        <img src="img/sikkens1.jpg" alt="Sikkens Autobase">
-                        <h4>Q040</h4>
-                        <p>Base Color Automotriz</p>
+        <!--SECCIÓN FOOTER-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-top-row">
+                    <!--Columna 1-->
+                    <div class="footer-col">
+                        <img src="img/Cemsapng.webp" alt="Logo CEMSA" class="footer-logo-img">
                     </div>
-                    <div class="item-producto">
-                        <img src="img/sikkens2.jpg" alt="Sikkens Primer">
-                        <h4>AUTOSURFACER</h4>
-                        <p>Primario Automotriz</p>
+
+                    <!--Columna 2-->
+                    <div class="footer-col">
+                        <h4>NAVEGACIÓN</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Enlaces</a></li>
+                            <li><a href="#contacto">Contactanos</a></li>
+                        </ul>
                     </div>
-                    <!--Aca se agregaran mas-->
-                </div>
-            </details>
 
-            <!--Acordeón WANDA-->
-            <details class="marca-acordeon">
-                <summary>WANDA <span class="icono-despliegue">+</span></summary>
-                <div class="contenido-acordeon grid-productos">
-                    <!--Aca se agregaran mas-->
-                </div>
-            </details>
+                    <!--Columna 3-->
+                    <div class="footer-col">
+                        <h4>SÍGUENOS</h4>
+                        <div class="social-icons vertical">
+                            <a href="https://www.facebook.com/CEMSARecubrimientos#" target="_blank" class="icono-red">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
+                                    alt="Facebook">
+                            </a>
 
-            <!--Acordeón U-TECH-->
-            <details class="marca-acordeon">
-                <summary>U-TECH <span class="icono-despliegue">+</span></summary>
-                <div class="contenido-acordeon grid-productos">
-                    <!--Aca se agregaran mas--> 
-                </div>
-            </details>
-        </section>
-    </main>
+                            <a href="https://x.com/cemsamx?lang=es" target="_blank" class="icono-red">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
+                            </a>
 
-    <!--SECCIÓN FOOTER-->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-top-row">
-                <!--Columna 1-->
-                <div class="footer-col">
-                    <img src="img/Cemsapng.webp" alt="Logo CEMSA" class="footer-logo-img">
+                            <a href="" target="_blank" class="icono-red">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                                    alt="YouTube">
+                            </a>
+
+                            <a href="" target="_blank" class="icono-red">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                                    alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!--Columna 2-->
-                <div class="footer-col">
-                    <h4>NAVEGACIÓN</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Enlaces</a></li>
-                        <li><a href="#">Conocenos</a></li>
-                    </ul>
-                </div>
+                <div class="footer-col alianzas-col">
+                    <h4>NUESTRO GRUPO Y ALIANZAS</h4>
+                    <div class="red-alianzas">
+                        <div class="alianzas-fila-superior">
+                            <div class="alianzas-bloque">
+                                <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
+                                    class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
+                                <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
+                                    class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
+                                <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
+                                    class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
+                            </div>
 
-                <!--Columna 3-->
-                <div class="footer-col">
-                    <h4>SÍGUENOS</h4>
-                    <div class="social-icons vertical">
-                        <a href="https://www.facebook.com/CEMSARecubrimientos#" target="_blank" class="icono-red">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
-                                alt="Facebook">
-                        </a>
+                            <div class="alianzas-centro">
+                                <a href="https://facebook.com/grupocemsa" target="_blank"
+                                    class="alianza-logo alianza-principal glow-gris"><img src="img/GC22.webp"
+                                        alt="GC Grupo CEMSA"></a>
+                            </div>
 
-                        <a href="https://x.com/cemsamx?lang=es" target="_blank" class="icono-red">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
-                        </a>
+                            <div class="alianzas-bloque">
+                                <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
+                                    class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
+                                <a href="https://www.facebook.com/nazareosac1" target="_blank"
+                                    class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp"
+                                        alt="Nazareos AC"></a>
+                                <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
+                                    class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
+                            </div>
+                        </div>
 
-                        <a href="" target="_blank" class="icono-red">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
-                                alt="YouTube">
-                        </a>
-
-                        <a href="" target="_blank" class="icono-red">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
-                                alt="Instagram">
-                        </a>
+                        <div class="alianzas-fila-inferior">
+                            <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
+                                class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
+                            <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
+                                class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
+                            <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
+                                class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--GLOBOS-->
-        <div class="footer-col alianzas-col">
-            <h4>NUESTRO GRUPO Y ALIANZAS</h4>
-            <div class="red-alianzas">
-                <div class="alianzas-fila-superior">
-                    <div class="alianzas-bloque">
-                        <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
-                            class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
-                        <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
-                            class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
-                        <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
-                            class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
-                    </div>
 
-                    <div class="alianzas-centro">
-                        <a href="https://facebook.com/grupocemsa" target="_blank"
-                            class="alianza-logo alianza-principal glow-gris"><img src="img/GC22.webp"
-                                alt="GC Grupo CEMSA"></a>
-                    </div>
-
-                    <div class="alianzas-bloque">
-                        <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
-                            class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
-                        <a href="https://www.facebook.com/nazareosac1" target="_blank"
-                            class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" alt="Nazareos AC"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
-                            class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
-                    </div>
-                </div>
-
-                <div class="alianzas-fila-inferior">
-                    <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
-                        class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
-                    <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
-                        class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
-                    <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
-                        class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
-                </div>
+            <!--CREDITOS-->
+            <div class="footer-bottom">
+                <p>© Designed by JARL / Ing. Yair Maldonado / Lic. Karen Moreno - CEMSA 2026 Todos los Derechos
+                    Reservados.
+                </p>
             </div>
-        </div>
+        </footer>
 
-        </div>
-
-        <!--CREDITOS-->
-        <div class="footer-bottom">
-            <p>© Designed by JARL / Ing. Yair Maldonado / Lic. Karen Moreno - CEMSA 2026 Todos los Derechos Reservados.
-            </p>
-        </div>
-    </footer>
-
-    <!--Script para el menú de hamburguesa-->
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('activo');
-        });
-    </script>
 </body>
 
 </html>

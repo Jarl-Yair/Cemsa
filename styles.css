@@ -922,8 +922,6 @@ nav a:hover {
 
 
 /*DISEÑO RESPONSIVO*/
-
-/* Tablets y Pantallas Medianas */
 @media (max-width: 992px) {
     .estadisticas { flex-wrap: wrap; gap: 40px; }
     .stat-item { width: 40%; }
