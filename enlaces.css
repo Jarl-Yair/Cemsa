@@ -1,0 +1,196 @@
+/*BANNER GRUPO CEMSA*/
+.hero-grupo-cemsa {
+    background-color: var(--color-azul);
+    padding: 60px 5%;
+    color: var(--color-blanco);
+}
+
+.hero-gc-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.gc-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.gc-imagen img {
+    width: 100%;
+    max-width: 350px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.gc-texto {
+    flex: 2;
+}
+
+.fondo-blanco {
+    background-color: var(--color-blanco);
+    color: var(--color-azul);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.gc-texto h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.gc-texto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.btn-gc {
+    background-color: var(--color-amarillo);
+    color: var(--texto-oscuro);
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-gc:hover {
+    background-color: #d1b140;
+    transform: translateY(-3px);
+}
+
+/*SOCIOS*/
+.intro-socios {
+    max-width: 1200px;
+    margin: 60px auto 40px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.socios-header-texto {
+    flex: 1;
+}
+
+.socios-header-texto p {
+    color: var(--texto-gris);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.socios-header-img {
+    flex: 1;
+}
+
+.socios-header-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/*CATÁLOGO DE SOCIOS*/
+.grid-socios-comerciales {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card-socio {
+    background-color: var(--color-blanco);
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-socio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.socio-logo {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.socio-logo img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.card-socio h3 {
+    color: var(--color-azul);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.card-socio p {
+    color: var(--texto-gris);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1; 
+}
+
+.btn-socio {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-socio:hover {
+    background-color: #2b95d6;
+}
+
+/*DISEÑO RESPONSIVO*/
+
+@media (max-width: 1100px) {
+    .grid-socios-comerciales {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-gc-contenedor {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .intro-socios {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-socios-comerciales {
+        grid-template-columns: 1fr;
+    }
+}
