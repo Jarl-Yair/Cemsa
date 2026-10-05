@@ -24,7 +24,7 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="#">Enlaces</a></li>
-                <li><a href="#contacto">Contactanos</a></li>
+                <li><a href="index.html#contacto">Contactanos</a></li>
             </ul>
         </nav>
         <div class="header-actions">
@@ -458,9 +458,9 @@
                         <ul class="footer-links">
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="productos.html">Productos</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Enlaces</a></li>
-                            <li><a href="#contacto">Contactanos</a></li>
+                            <li><a href="servicios.html">Servicios</a></li>
+                            <li><a href="enlaces.html">Enlaces</a></li>
+                            <li><a href="index.html#contacto">Contactanos</a></li>
                         </ul>
                     </div>
 
@@ -539,6 +539,17 @@
                 </p>
             </div>
         </footer>
+
+        <script>
+            // FUNCIONAMIENTO DEL MENÚ HAMBURGUESA
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMenu = document.getElementById('nav-menu');
+
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('activo');
+            });
+        </script>
+
 
 </body>
 

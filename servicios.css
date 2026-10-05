@@ -1,0 +1,387 @@
+/*SERVICIOS */
+.intro-servicios { 
+    padding: 60px 5% 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.azul-etiqueta { 
+    background-color: var(--color-azul); 
+    color: var(--color-blanco); 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    font-weight: bold; 
+    font-size: 0.9rem; 
+    display: inline-block; 
+    margin-bottom: 20px;
+}
+
+.texto-intro { 
+    font-size: 1.1rem; 
+    color: var(--texto-gris); 
+    line-height: 1.7; 
+    max-width: 900px; 
+    margin: 0 auto 40px auto; 
+}
+
+.intro-imagen img { 
+    width: 100%; 
+    max-width: 800px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+}
+
+/*PESTAÑAS INTERACTIVAS DE SERVICIOS*/
+.seccion-tabs { 
+    padding: 40px 5%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.titulo-categoria { 
+    text-align: center; 
+    color: var(--texto-oscuro); 
+    font-size: 2rem; 
+    margin-bottom: 30px; 
+}
+
+.contenedor-tabs { 
+    display: flex; 
+    gap: 30px; 
+    align-items: flex-start; 
+}
+
+/* Ocultar los botones de radio redondos originales */
+.contenedor-tabs input[type="radio"] { 
+    display: none; 
+}
+
+/* Menú lateral izquierdo */
+.menu-tabs { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    width: 250px; 
+    flex-shrink: 0; 
+}
+
+.tab-btn { 
+    background-color: #f0f0f0; 
+    padding: 15px 20px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background 0.3s, transform 0.2s; 
+    font-weight: 500; 
+    color: var(--texto-oscuro); 
+}
+
+.tab-btn:hover { 
+    background-color: #e4e4e4; 
+    transform: translateX(5px); 
+}
+
+/*Contenedor derecho donde aparece el contenido*/
+.contenido-tabs { 
+    flex-grow: 1; 
+    background: var(--color-blanco); 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    border: 1px solid #eaeaea; 
+}
+
+.panel-tab { 
+    display: none; 
+    animation: aparecer 0.4s ease-in-out; 
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.panel-cabecera { 
+    background-color: var(--color-azul); 
+    color: var(--color-blanco); 
+    padding: 15px 25px; 
+    font-size: 1.25rem; 
+    font-weight: bold; 
+}
+
+.panel-cuerpo { 
+    padding: 25px; 
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.panel-cuerpo p { 
+    flex: 1; 
+    color: var(--texto-gris); 
+    line-height: 1.6; 
+    text-align: justify; 
+}
+
+.panel-cuerpo img { 
+    width: 250px; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+/*LÓGICA CSS PARA NO USAR JAVASCRIPT*/
+
+/* 1. Iluminar en amarillo el botón de la pestaña activa */
+#auto-hojalateria:checked ~ .menu-tabs label[for="auto-hojalateria"],
+#auto-flotillas:checked ~ .menu-tabs label[for="auto-flotillas"],
+#auto-igualacion:checked ~ .menu-tabs label[for="auto-igualacion"],
+#ind-ampp:checked ~ .menu-tabs label[for="ind-ampp"],
+#ind-inspecciones:checked ~ .menu-tabs label[for="ind-inspecciones"],
+#ind-preparacion:checked ~ .menu-tabs label[for="ind-preparacion"],
+#esp-pisos:checked ~ .menu-tabs label[for="esp-pisos"],
+#esp-pregrout:checked ~ .menu-tabs label[for="esp-pregrout"],
+#esp-siliconado:checked ~ .menu-tabs label[for="esp-siliconado"] {
+    background-color: var(--color-amarillo);
+    font-weight: bold;
+    transform: scale(1.02);
+}
+
+/* 2. Mostrar el panel de información que corresponde al botón activo */
+#auto-hojalateria:checked ~ .contenido-tabs #panel-hojalateria,
+#auto-flotillas:checked ~ .contenido-tabs #panel-flotillas,
+#auto-igualacion:checked ~ .contenido-tabs #panel-igualacion,
+#ind-ampp:checked ~ .contenido-tabs #panel-ampp,
+#ind-inspecciones:checked ~ .contenido-tabs #panel-inspecciones,
+#ind-preparacion:checked ~ .contenido-tabs #panel-preparacion,
+#esp-pisos:checked ~ .contenido-tabs #panel-pisos,
+#esp-pregrout:checked ~ .contenido-tabs #panel-pregrout,
+#esp-siliconado:checked ~ .contenido-tabs #panel-siliconado {
+    display: block;
+}
+
+/*TARJETAS DE SOPORTE DE PDFs*/
+.seccion-soporte { 
+    padding: 60px 5%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.cabecera-soporte { 
+    display: flex; 
+    gap: 20px; 
+    align-items: flex-start; 
+    margin-bottom: 40px; 
+}
+
+.icono-soporte img { 
+    width: 80px; 
+    height: auto; 
+}
+
+.texto-soporte p { 
+    color: var(--texto-gris); 
+    line-height: 1.6; 
+    margin-top: 15px; 
+    max-width: 800px; 
+}
+
+.grid-soporte { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.card-soporte { 
+    background-color: var(--color-azul); 
+    padding: 30px 20px; 
+    border-radius: 12px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    text-align: center; 
+    min-height: 180px; 
+    box-shadow: 0 5px 15px rgba(54, 94, 168, 0.2); 
+    transition: transform 0.3s;
+}
+
+.card-soporte:hover {
+    transform: translateY(-5px);
+}
+
+.card-soporte h3 { 
+    color: var(--color-blanco); 
+    font-size: 1.1rem; 
+    margin-bottom: 20px; 
+    line-height: 1.4; 
+}
+
+.btn-ver-mas { 
+    background-color: var(--color-amarillo); 
+    color: var(--texto-oscuro); 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    font-weight: bold; 
+    font-size: 0.9rem; 
+    transition: background 0.3s; 
+    width: 80%; 
+}
+
+.btn-ver-mas:hover { 
+    background-color: #d1b140; 
+}
+
+/*MODALES PARA VENTANAS FLOTANTES DE PDFs*/
+.modal-flotante {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    opacity: 0; 
+    pointer-events: none; 
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+/* Cuando el botón activa el ID del modal, se vuelve visible */
+.modal-flotante:target { 
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+.modal-contenido {
+    background-color: var(--color-azul);
+    width: 90%; 
+    max-width: 500px;
+    padding: 30px; 
+    border-radius: 12px;
+    position: relative; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: translateY(-20px); 
+    transition: transform 0.3s ease;
+}
+
+.modal-flotante:target .modal-contenido { 
+    transform: translateY(0); 
+}
+
+.btn-cerrar {
+    position: absolute; 
+    top: 15px; 
+    right: 20px;
+    color: var(--color-blanco); 
+    text-decoration: none;
+    font-size: 1.8rem; 
+    font-weight: bold; 
+    line-height: 1;
+    transition: color 0.3s;
+}
+
+.btn-cerrar:hover { 
+    color: var(--color-amarillo); 
+}
+
+.titulo-modal { 
+    color: var(--color-blanco); 
+    font-size: 1.5rem; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    padding-bottom: 10px; 
+    border-bottom: 1px solid rgba(255,255,255,0.2); 
+}
+
+.lista-pdf { 
+    list-style: none; 
+    padding: 0; 
+    margin-bottom: 20px; 
+    max-height: 50vh; 
+    overflow-y: auto;
+    padding-right: 10px; 
+}
+
+.lista-pdf li { 
+    margin-bottom: 12px; 
+}
+
+.lista-pdf a { 
+    color: var(--color-blanco); 
+    text-decoration: none; 
+    font-size: 0.95rem; 
+    display: flex; 
+    align-items: center; 
+    transition: color 0.2s; 
+}
+
+.lista-pdf a:hover { 
+    color: var(--color-amarillo); 
+    text-decoration: underline; 
+}
+
+.nota-descarga { 
+    color: #ff6b6b; 
+    font-size: 0.85rem; 
+    text-align: center; 
+    font-weight: bold; 
+    margin-top: 20px; 
+}
+
+/*DISEÑO RESPONSIVO*/
+@media (max-width: 992px) {
+    .grid-soporte { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .cabecera-soporte { 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+}
+
+@media (max-width: 768px) {
+    /* Convierte el menú lateral en un menú superior apilado */
+    .contenedor-tabs { 
+        flex-direction: column; 
+    }
+    
+    .menu-tabs { 
+        width: 100%; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    
+    .tab-btn { 
+        flex: 1 1 calc(33.333% - 10px); 
+        text-align: center; 
+        padding: 10px; 
+        font-size: 0.9rem; 
+    }
+    
+    /* Apila las imágenes del contenido abajo del texto */
+    .panel-cuerpo { 
+        flex-direction: column; 
+        text-align: center; 
+    }
+    
+    .panel-cuerpo p { 
+        text-align: center; 
+    }
+    
+    .panel-cuerpo img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .grid-soporte { 
+        grid-template-columns: 1fr; 
+    }
+}
