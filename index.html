@@ -230,14 +230,10 @@
                 <p class="desc-interaccion">Síguenos en todas nuestras redes sociales</p>
                 <div class="embed-redes"
                     style="display: flex; justify-content: center; border-radius: 8px; overflow: hidden; background-color: #f0f2f5;">
-                    <iframe 
-                        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/CEMSARecubrimientos&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" 
-                        width="100%" 
-                        height="300" 
-                        style="border:none;overflow:hidden; max-width: 340px;"
-                        scrolling="no" 
-                        frameborder="0" 
-                        allowfullscreen="true"
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/CEMSARecubrimientos&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+                        width="100%" height="300" style="border:none;overflow:hidden; max-width: 340px;" scrolling="no"
+                        frameborder="0" allowfullscreen="true"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                     </iframe>
                 </div>
@@ -357,7 +353,9 @@
             <!--Mapa de Google-->
             <div class="contacto-mapa">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039216.3805886307!2d-103.45600064120228!3d19.74624343514143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f440306156a3%3A0x17e336b2b2b06844!2sCEMSA%20Recubrimientos!5e1!3m2!1ses!2smx!4v1791310136724!5m2!1ses!2smx"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039216.3805886307!2d-103.45600064120228!3d19.74624343514143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f440306156a3%3A0x17e336b2b2b06844!2sCEMSA%20Recubrimientos!5e1!3m2!1ses!2smx!4v1791310136724!5m2!1ses!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
                 </iframe>
             </div>
         </div>
@@ -395,16 +393,6 @@
 
                         <a href="https://x.com/cemsamx?lang=es" target="_blank" class="icono-red">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
-                        </a>
-
-                        <a href="" target="_blank" class="icono-red">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
-                                alt="YouTube">
-                        </a>
-
-                        <a href="" target="_blank" class="icono-red">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
-                                alt="Instagram">
                         </a>
                     </div>
                 </div>
@@ -457,6 +445,108 @@
             </p>
         </div>
     </footer>
+    <!--SISTEMA DE COOKIES-->
+    <!-- 1.Conguracion de google analytics-->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        //Revisa si el usuario ya ha dado su consentimiento previamente, si no bloquea el rastreo hasta que se otorgue el consentimiento
+        let estadoPrevio = localStorage.getItem('estadoCookies') == 'true' ? 'granted' : 'denied';
+        gtag('js', new Date());
+        gtag('config', 'G-CVL1WCKRJ7');
+    </script>
+
+    <!--Etiqueta original de gtag.js-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
+    <script>
+        gtag('js', new Date());
+        gtag('config', 'G-CVL1WCKRJ7');
+    </script>
+
+    <!--2.BANNER PRINCIPAL-->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-texto">
+            <h3 style="margin-top: 0; color:var(--color-azul)">Privacidad y Cookies</h3>
+            <p>Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte contenido personalizado.
+                Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias.</p>
+        </div>
+        <div class="cookies-botones">
+            <button id="btn-configurar" class="btn-cookie btn-secundario">Configurar</button>
+            <button id="btn-rechazar" class="btn-cookie btn-secundario">Rechazar</button>
+            <button id="btn-aceptar" class="btn-cookie btn-principal">Aceptar Todas</button>
+        </div>
+    </div>
+    <!--3. Modal de configuración-->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="cookie-modal-contenido">
+            <h3 style="color:var(--color-azul); margin-top: 0;">Configuración de Cookies</h3>
+            <p style="font-size: 0.9rem; color: #555;">Selecciona qué tipo de cookies deseas permitir en tu navegador.
+            </p>
+
+            <div class="opcion-cookie">
+                <label>
+                    <input type="checkbox" checked disabled>
+                    <strong>Técnicas (Obligatorias)</strong>
+                </label>
+                <p>Son necesarias para que la página funcione. No se pueden desactivar.</p>
+            </div>
+            <div class="opcion-cookie">
+                <label>
+                    <input type="checkbox" id="check-analiticas" checked>
+                    <strong>Google Analytics</strong>
+                </label>
+                <p>Nos ayudan a entender cómo usas la página para mejorar su diseño y funcionalidad.</p>
+            </div>
+
+            <button id="btn-guardar-config" class="btn-cookie btn-principal" style="width:100%; margin-top:20px;">Guardar Preferencias</button>
+        </div>
+    </div>
+
+    <!--4. Lógica de los bortones-->
+    <script>
+        const bannerCookies = document.getElementById('cookie-banner');
+        const modalCookies = document.getElementById('cookie-modal');
+
+        //Muestra el banner si es la primera vez que entra 
+        if (!localStorage.getItem('cookies-banner')) {
+            bannerCookies.classList.add('activo');
+        }
+
+        //Funión para activar Google Analytics y guardar el estado en localStorage
+        function activarAnalytics(permitir) {
+            const estado = permitir ? 'granted' : 'denied';
+            gtag('consent', 'update', { 'analytics_storage': estado });
+            localStorage.setItem('cookiesAnaliticas', permitir.toString());
+        }
+
+        //Botómn Aceptar Todas
+        document.getElementById('btn-aceptar').addEventListener('click', () => {
+            localStorage.setItem('estadoCookies', 'aceptadas');
+            activarAnalytics(true);
+            bannerCookies.classList.remove('activo');
+        });
+
+        //Botón Rechazar
+        document.getElementById('btn-rechazar').addEventListener('click', () => {
+            localStorage.setItem('estadoCookies', 'rechazadas');
+            activarAnalytics(false);
+            bannerCookies.classList.remove('activo');
+        });
+
+        //Botones de configuración
+        document.getElementById('btn-configurar').addEventListener('click', () => {
+            modalCookies.classList.add('activo');
+        });
+
+        document.getElementById('btn-guardar-config').addEventListener('click', () => {
+            const analisticasActivadas = document.getElementById('check-analiticas').checked;
+            localStorage.setItem('estadoCookies', 'personalizadas');
+            activarAnalytics(analisticasActivadas);
+            modalCookies.classList.remove('activo');
+            bannerCookies.classList.remove('activo');
+        });
+    </script>
+
 
     <!--SCRIPT PARA EL FUNCIONAMIENTO DEL CARRUSEL-->
     <script>
