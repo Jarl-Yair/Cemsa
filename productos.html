@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="productos.css">
     <link rel="icon" href="img/cemsis.webp">
+    <!-- Preconexiones para acelerar carga externa -->
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
+    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
     <script>
@@ -25,7 +28,7 @@
         <div class="logo-container">
             <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
         </div>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
 
         <nav id="nav-menu">
             <ul>
@@ -57,17 +60,17 @@
                 <summary>SIKKENS <span class="icono-despliegue">+</span></summary>
                 <div class="contenido-acordeon grid-productos">
                     <div class="item-producto">
-                        <img src="img/Sik1.webp" alt="Sikkens Q040">
+                        <img src="img/Sik1.webp" loading="lazy" alt="Sikkens Q040">
                         <h4>Q040</h4>
                         <p>BASE COLOR AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/Sik2.webp" alt="Sikkens Autosurfacer">
+                        <img src="img/Sik2.webp" loading="lazy" alt="Sikkens Autosurfacer">
                         <h4>AUTOSURFACER</h4>
                         <p>PRIMARIO AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/Sik3.webp" alt="Sikkens Washprimer">
+                        <img src="img/Sik3.webp" loading="lazy" alt="Sikkens Washprimer">
                         <h4>WASHPRIMER 1K CF</h4>
                         <p>PRIMARIO AUTOMOTRIZ</p>
                     </div>
@@ -77,7 +80,7 @@
                         <p>TRANSPARENTE AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/Sik5.webp" alt="Sikkens Pro Air">
+                        <img src="img/Sik5.webp" loading="lazy" alt="Sikkens Pro Air">
                         <h4>PRO AIR CLEAR</h4>
                         <p>TRANSPARENTE AUTOMOTRIZ</p>
                     </div>
@@ -88,17 +91,17 @@
                 <summary>WANDA<span class="icono-despliegue">+</span></summary>
                 <div class="contenido-acordeon grid-productos">
                     <div class="item-producto">
-                        <img src="img/W1.webp" alt="Wanda Producto 1">
+                        <img src="img/W1.webp" loading="lazy" alt="Wanda Producto 1">
                         <h4>WANDA BASE</h4>
                         <p>BASE COLOR AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/W2.webp" alt="Wanda Producto 2">
+                        <img src="img/W2.webp"loading="lazy" alt="Wanda Producto 2">
                         <h4>8100</h4>
                         <p>PRIMARIO AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/W3.webp" alt="Wanda Producto 3">
+                        <img src="img/W3.webp" loading="lazy" alt="Wanda Producto 3">
                         <h4>5100</h4>
                         <p>TRANSPARENTE AUTOMOTRIZ</p>
                     </div>
@@ -108,7 +111,7 @@
                         <p>POLIURETANO AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/W5.webp" alt="Wanda Producto 5">
+                        <img src="img/W5.webp" loading="lazy" alt="Wanda Producto 5">
                         <h4>WANDA FILLER</h4>
                         <p>PRIMARIO AUTOMOTRIZ</p>
                     </div>
@@ -119,27 +122,27 @@
                 <summary>U-TECH<span class="icono-despliegue">+</span></summary>
                 <div class="contenido-acordeon grid-productos">
                     <div class="item-producto">
-                        <img src="img/U1.webp" alt="U-Tech Producto 1">
+                        <img src="img/U1.webp" loading="lazy" alt="U-Tech Producto 1">
                         <h4>U500</h4>
                         <p>POLIURETANO AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/U2.webp" alt="U-Tech Producto 2">
+                        <img src="img/U2.webp" loading="lazy" alt="U-Tech Producto 2">
                         <h4>U350</h4>
                         <p>POLIURETANO AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/U3.webp" alt="U-Tech Producto 3">
+                        <img src="img/U3.webp" loading="lazy" alt="U-Tech Producto 3">
                         <h4>4.0</h4>
                         <p>TRANSPARENTE AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/U4.webp" alt="U-Tech Producto 4">
+                        <img src="img/U4.webp" loading="lazy" alt="U-Tech Producto 4">
                         <h4>2K100</h4>
                         <p>PRIMARIO AUTOMOTRIZ</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/U5.webp" alt="U-Tech Producto 5">
+                        <img src="img/U5.webp" loading="lazy" alt="U-Tech Producto 5">
                         <h4>E250</h4>
                         <p>PRIMARIO AUTOMOTRIZ</p>
                     </div>
@@ -150,27 +153,27 @@
                 <summary>INTERNATIONAL<span class="icono-despliegue">+</span></summary>
                 <div class="contenido-acordeon grid-productos">
                     <div class="item-producto">
-                        <img src="img/I1.webp" alt="International Producto 1">
+                        <img src="img/I1.webp" loading="lazy" alt="International Producto 1">
                         <h4>INTERTHANE 990</h4>
                         <p>ACABADO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/I2.webp" alt="International Producto 2">
+                        <img src="img/I2.webp" loading="lazy" alt="International Producto 2">
                         <h4>INTERSEAL 670HS</h4>
                         <p>INTERMEDIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/I3.webp" alt="International Producto 3">
+                        <img src="img/I3.webp" loading="lazy" alt="International Producto 3">
                         <h4>INTERZINC 22HS</h4>
                         <p>PRIMARIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/I4.webp" alt="International Producto 4">
+                        <img src="img/I4.webp" loading="lazy" alt="International Producto 4">
                         <h4>INTERZINC 52</h4>
                         <p>PRIMARIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/I5.webp" alt="International Producto 5">
+                        <img src="img/I5.webp" loading="lazy" alt="International Producto 5">
                         <h4>INTERTHERM 50</h4>
                         <p>ALTA TEMPERATURA INDUSTRIAL</p>
                     </div>
@@ -181,27 +184,27 @@
                 <summary>HEMPEL<span class="icono-despliegue">+</span></summary>
                 <div class="contenido-acordeon grid-productos">
                     <div class="item-producto">
-                        <img src="img/H1.webp" alt="Hempel Producto 1">
+                        <img src="img/H1.webp" loading="lazy" alt="Hempel Producto 1">
                         <h4>HEMPATHANE 55610</h4>
                         <p>ACABADO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/H2.webp" alt="Hempel Producto 2">
+                        <img src="img/H2.webp" loading="lazy" alt="Hempel Producto 2">
                         <h4>HEMPADUR MASTIC 45880</h4>
                         <p>INTERMEDIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/H3.webp" alt="Hempel Producto 3">
+                        <img src="img/H3.webp" loading="lazy" alt="Hempel Producto 3">
                         <h4>GALVOSIL 15700</h4>
                         <p>PRIMARIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/H4.webp" alt="Hempel Producto 4">
+                        <img src="img/H4.webp" loading="lazy" alt="Hempel Producto 4">
                         <h4>HEMPEL SILICONE 56913</h4>
                         <p>ALTA TEMPERATURA INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/H5.webp" alt="Hempel Producto 5">
+                        <img src="img/H5.webp" loading="lazy" alt="Hempel Producto 5">
                         <h4>HEMPADUR 85671</h4>
                         <p>INT. DE TANQUES INDUSTRIAL</p>
                     </div>
@@ -212,27 +215,27 @@
                 <summary>PPG<span class="icono-despliegue">+</span></summary>
                 <div class="contenido-acordeon grid-productos">
                     <div class="item-producto">
-                        <img src="img/P1.webp" alt="PPG Producto 1">
+                        <img src="img/P1.webp" loading="lazy" alt="PPG Producto 1">
                         <h4>AMERSHIELD</h4>
                         <p>ACABADO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/P2.webp" alt="PPG Producto 2">
+                        <img src="img/P2.webp" loading="lazy" alt="PPG Producto 2">
                         <h4>AMERCOAT 400</h4>
                         <p>INTERMEDIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/P3.webp" alt="PPG Producto 3">
+                        <img src="img/P3.webp" loading="lazy" alt="PPG Producto 3">
                         <h4>DIMECOTE 9</h4>
                         <p>PRIMARIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/P4.webp" alt="PPG Producto 4">
+                        <img src="img/P4.webp" loading="lazy" alt="PPG Producto 4">
                         <h4>HITEMP 1027</h4>
                         <p>ALTA TEMPERATURA INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/P5.webp" alt="PPG Producto 5">
+                        <img src="img/P5.webp" loading="lazy" alt="PPG Producto 5">
                         <h4>NOVAGUARD 840</h4>
                         <p>INT. DE TANQUES INDUSTRIAL</p>
                     </div>
@@ -243,22 +246,22 @@
                 <summary>SHERWIN WILLIAMS <span class="icono-despliegue">+</span></summary>
                 <div class="contenido-acordeon grid-productos">
                     <div class="item-producto">
-                        <img src="img/S1.webp" alt="Sherwin Producto 1">
+                        <img src="img/S1.webp" loading="lazy" alt="Sherwin Producto 1">
                         <h4>ACROLON</h4>
                         <p>ACABADO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/S2.webp" alt="Sherwin Producto 2">
+                        <img src="img/S2.webp" loading="lazy" alt="Sherwin Producto 2">
                         <h4>MACROPOXI</h4>
                         <p>INTERMEDIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/S3.webp" alt="Sherwin Producto 3">
+                        <img src="img/S3.webp" loading="lazy" alt="Sherwin Producto 3">
                         <h4>ZINC CLAD II</h4>
                         <p>PRIMARIO INDUSTRIAL</p>
                     </div>
                     <div class="item-producto">
-                        <img src="img/S4.webp" alt="Sherwin Producto 4">
+                        <img src="img/S4.webp" loading="lazy" alt="Sherwin Producto 4">
                         <h4>EPO-THEN</h4>
                         <p>INT. DE TANQUES INDUSTRIAL</p>
                     </div>
@@ -291,7 +294,7 @@
                     <summary>
                         <span class="btn-categoria">Interior de Tanques</span>
                         <div class="circulo-img">
-                            <img src="img/Interior de Tanques.webp" alt="Interior de Tanques">
+                            <img src="img/Interior de Tanques.webp" loading="lazy" alt="Interior de Tanques">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -308,7 +311,7 @@
                     <summary>
                         <span class="btn-categoria">Alquílicos</span>
                         <div class="circulo-img">
-                            <img src="img/alquilicos.webp" alt="Alquílicos">
+                            <img src="img/alquilicos.webp" loading="lazy" alt="Alquílicos">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -325,7 +328,7 @@
                     <summary>
                         <span class="btn-categoria">Antiácidos</span>
                         <div class="circulo-img">
-                            <img src="img/Antiacidos.webp.webp" alt="Antiácidos">
+                            <img src="img/Antiacidos.webp.webp" loading="lazy" alt="Antiácidos">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -343,7 +346,7 @@
                     <summary>
                         <span class="btn-categoria">Vinílicos y Acrílicos</span>
                         <div class="circulo-img">
-                            <img src="img/Vinilicos.webp" alt="Vinílicos y Acrílicos">
+                            <img src="img/Vinilicos.webp" loading="lazy" alt="Vinílicos y Acrílicos">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -360,7 +363,7 @@
                     <summary>
                         <span class="btn-categoria">Anticorrosivos</span>
                         <div class="circulo-img">
-                            <img src="img/Anticorrosivos.webp" alt="Anticorrosivos">
+                            <img src="img/Anticorrosivos.webp" loading="lazy" alt="Anticorrosivos">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -376,7 +379,7 @@
                     <summary>
                         <span class="btn-categoria">Anti-vegetativos</span>
                         <div class="circulo-img">
-                            <img src="img/Antivegetativo.webp" alt="Anti-vegetativos">
+                            <img src="img/Antivegetativo.webp" loading="lazy" alt="Anti-vegetativos">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -393,7 +396,7 @@
                     <summary>
                         <span class="btn-categoria">PEMEX y CFE</span>
                         <div class="circulo-img">
-                            <img src="img/PEMEX y CFE.webp" alt="PEMEX y CFE">
+                            <img src="img/PEMEX y CFE.webp" loading="lazy" alt="PEMEX y CFE">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -413,7 +416,7 @@
                     <summary>
                         <span class="btn-categoria">Obra Civil</span>
                         <div class="circulo-img">
-                            <img src="img/Obra Civil.webp" alt="Obra Civil">
+                            <img src="img/Obra Civil.webp" loading="lazy" alt="Obra Civil">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -432,7 +435,7 @@
                     <summary>
                         <span class="btn-categoria">Automotrices</span>
                         <div class="circulo-img">
-                            <img src="img/Automotriz.webp" alt="Automotrices">
+                            <img src="img/Automotriz.webp" loading="lazy" alt="Automotrices">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -449,7 +452,7 @@
                     <summary>
                         <span class="btn-categoria">Contrafuego</span>
                         <div class="circulo-img">
-                            <img src="img/Contrafuego.webp" alt="Contrafuego">
+                            <img src="img/Contrafuego.webp" loading="lazy" alt="Contrafuego">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -466,7 +469,7 @@
                     <summary>
                         <span class="btn-categoria">Epóxicos</span>
                         <div class="circulo-img">
-                            <img src="img/Epoxico.webp" alt="Epóxicos">
+                            <img src="img/Epoxico.webp" loading="lazy"  alt="Epóxicos">
                         </div>
                     </summary>
                     <div class="info-desplegable">
@@ -486,7 +489,7 @@
                 <div class="footer-top-row">
                     <!--Columna 1-->
                     <div class="footer-col">
-                        <img src="img/Cemsapng.webp" alt="Logo CEMSA" class="footer-logo-img">
+                        <img src="img/Cemsapng.webp" loading="lazy" alt="Logo CEMSA" class="footer-logo-img">
                     </div>
 
                     <!--Columna 2-->
@@ -523,36 +526,42 @@
                         <div class="alianzas-fila-superior">
                             <div class="alianzas-bloque">
                                 <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
-                                    class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
+                                    class="alianza-logo glow-rojo"><img src="img/Urban.webp" loading="lazy"
+                                        alt="Urban"></a>
                                 <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
-                                    class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
+                                    class="alianza-logo glow-azul"><img src="img/Cemsa.webp" loading="lazy"
+                                        alt="CEMSA"></a>
                                 <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
-                                    class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
+                                    class="alianza-logo glow-blanco"><img src="img/Jarl.webp" loading="lazy"
+                                        alt="Jarl"></a>
                             </div>
 
                             <div class="alianzas-centro">
                                 <a href="G.html" target="_blank" class="alianza-logo alianza-principal glow-gris"><img
-                                        src="img/GC22.webp" alt="GC Grupo CEMSA"></a>
+                                        src="img/GC22.webp" loading="lazy" alt="GC Grupo CEMSA"></a>
                             </div>
 
                             <div class="alianzas-bloque">
                                 <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
-                                    class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
+                                    class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" loading="lazy"
+                                        alt="Nazareos"></a>
                                 <a href="https://www.facebook.com/nazareosac1" target="_blank"
-                                    class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp"
+                                    class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" loading="lazy"
                                         alt="Nazareos AC"></a>
                                 <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
-                                    class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
+                                    class="alianza-logo glow-verde"><img src="img/E&C.png" loading="lazy" alt="E&C"></a>
                             </div>
                         </div>
 
                         <div class="alianzas-fila-inferior">
                             <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
-                                class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
+                                class="alianza-logo glow-amarillo"><img src="img/EPP.webp" loading="lazy" alt="EPP"></a>
                             <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
-                                class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
+                                class="alianza-logo glow-celeste"><img src="img/Kumon.webp" loading="lazy"
+                                    alt="Kumon"></a>
                             <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
-                                class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
+                                class="alianza-logo glow-cian"><img src="img/Spacioss.png" loading="lazy"
+                                    alt="Spacioss"></a>
                         </div>
                     </div>
                 </div>

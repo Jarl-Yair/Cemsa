@@ -270,6 +270,32 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
+.servicios-contenedor-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.servicios-cabecera {
+    flex: 1;
+}
+
+.servicios-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.servicios-imagen img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(54, 94, 168, 0.1);
+    object-fit: cover;
+}
+
 .grid-servicios {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -311,10 +337,6 @@ nav a:hover {
     color: var(--texto-gris);
     line-height: 1.6;
     font-size: 1rem;
-}
-
-.servicios-cabecera {
-    margin-bottom: 50px;
 }
 
 .btn-espaciado {
@@ -975,11 +997,11 @@ nav a:hover {
 
 .cookie-texto {
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 .cookie-texto p {
-    margin: 0px;
+    margin: 0;
     font-size: 0.95rem;
     color: var(--texto-gris);
 }
@@ -991,12 +1013,13 @@ nav a:hover {
 }
 
 .btn-cookie {
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     border: none;
     transition: 0.3s;
+    font-size: 0.9rem;
 }
 
 .btn-principal {
@@ -1004,28 +1027,28 @@ nav a:hover {
     color: var(--color-blanco);
 }
 
-.btn.principal:hover {
+.btn-principal:hover {
     background-color: #2b95d6;
 }
 
-.btn.secundario {
+.btn-secundario {
     background-color: transparent;
-    color: var(--texto-azul);
+    color: var(--color-azul);
     border: 2px solid var(--color-azul);
 }
 
-.btn.secundario:hover {
+.btn-secundario:hover {
     background-color: rgba(56, 182, 255, 0.1);
 }
 
-/* Modal de cookies */
+/* Modal de Configuración */
 .cookie-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
     display: none;
     z-index: 10000;
@@ -1038,7 +1061,7 @@ nav a:hover {
 }
 
 .cookie-modal-contenido {
-    background-color: var(--color-blanco);
+    background: var(--color-blanco);
     padding: 30px;
     border-radius: 12px;
     max-width: 500px;
@@ -1058,7 +1081,7 @@ nav a:hover {
     border-bottom: none;
 }
 
-.opcion-cookie p{
+.opcion-cookie p {
     font-size: 0.85rem;
     color: var(--texto-gris);
     margin: 5px 0 0 25px;
@@ -1197,6 +1220,15 @@ nav a:hover {
     .stat-item {
         width: 100%;
     }
+    
+    .servicios-contenedor-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .servicios-cabecera {
+        text-align: center;
+    }
 
     .grid-servicios {
         grid-template-columns: 1fr;
@@ -1278,28 +1310,26 @@ nav a:hover {
         justify-content: center;
     }
 
-    /* Responsive de cookies */
-    @media (max-width: 768px) {
-        .cookie-banner {
-            flex-direction: column;
-            text-align: center;
-            padding: 15px 5%;
-        }
+    /* ---RESPONSIVE DE COOKIES --- */
+    .cookie-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 5%;
+    }
 
-        .cookie-botones {
-            width: 100%;
-            flex-direction: column;
-            gap: 8px;
-        }
+    .cookie-botones {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+    }
 
-        .btn-cookies {
-            width: 100%;
-            padding: 12px;
-        }
+    .btn-cookie {
+        width: 100%;
+        padding: 12px;
+    }
 
-        .cookie-modal-contenido {
-            padding: 20px;
-            width: 95%;
-        }
+    .cookie-modal-contenido {
+        padding: 20px;
+        width: 95%;
     }
 }

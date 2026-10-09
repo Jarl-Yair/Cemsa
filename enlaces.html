@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enlaces.css">
     <link rel="icon" href="img/cemsis.webp">
+    <!-- Preconexiones para acelerar carga externa -->
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
+    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
     <script>
@@ -34,7 +37,7 @@
             <div class="logo-container">
                 <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
             </div>
-            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
 
             <nav id="nav-menu">
                 <ul>
@@ -55,7 +58,7 @@
             <section class="hero-grupo-cemsa">
                 <div class="hero-gc-contenedor">
                     <div class="gc-imagen">
-                        <img src="img/GC22.webp" alt="Logo Grupo CEMSA">
+                        <img src="img/GC22.webp" loading="lazy" alt="Logo Grupo CEMSA">
                     </div>
                     <div class="gc-texto">
                         <span class="etiqueta-texto fondo-blanco">Enlaces:</span>
@@ -76,7 +79,7 @@
                         brindarte los mejores productos y de calidad.</p>
                 </div>
                 <div class="socios-header-img">
-                    <img src="img/Socios.webp" alt="Socios">
+                    <img src="img/Socios.webp" loading="lazy" alt="Socios">
                 </div>
             </section>
 
@@ -86,7 +89,7 @@
                 <!--Socio AkzoNobel-->
                 <div class="card-socio">
                     <div class="socio-logo">
-                        <img src="img/akzonobel.webp" alt="AkzoNobel">
+                        <img src="img/akzonobel.webp" loading="lazy" alt="AkzoNobel">
                     </div>
                     <h3>AKZO NOBEL</h3>
                     <p>Empresa multinacional especializada en pinturas decorativas, pinturas industriales y productos
@@ -98,7 +101,7 @@
                 <!--Socio Hempel-->
                 <div class="card-socio">
                     <div class="socio-logo">
-                        <img src="img/Hempel.webp" alt="Hempel">
+                        <img src="img/Hempel.webp" loading="lazy" alt="Hempel">
                     </div>
                     <h3>HEMPEL</h3>
                     <p>Es un proveedor global de revestimientos y servicios en las industrias de protección, marina,
@@ -122,7 +125,7 @@
                 <!--Socio Sherwin Williams-->
                 <div class="card-socio">
                     <div class="socio-logo">
-                        <img src="img/Sherwin.webp" alt="Sherwin Williams">
+                        <img src="img/Sherwin.webp" loading="lazy" alt="Sherwin Williams">
                     </div>
                     <h3>SHERWIN WILLIAMS</h3>
                     <p>Empresa dedicada a la producción y distribución de pinturas y recubrimientos de alta calidad, con
@@ -145,7 +148,7 @@
                 <!-- Socio 6: Norton -->
                 <div class="card-socio">
                     <div class="socio-logo">
-                        <img src="img/Norton.webp" alt="Norton">
+                        <img src="img/Norton.webp" loading="lazy" alt="Norton">
                     </div>
                     <h3>NORTON</h3>
                     <p>Empresa líder mundial en abrasivos con más de 130 años, proporciona la cartera de productos más
@@ -157,7 +160,7 @@
                 <!-- Socio 7: Roberlo -->
                 <div class="card-socio">
                     <div class="socio-logo">
-                        <img src="img/rOBERLO.webp" alt="Roberlo">
+                        <img src="img/rOBERLO.webp" loading="lazy" alt="Roberlo">
                     </div>
                     <h3>ROBERLO</h3>
                     <p>Es una empresa fundada en 1968 en Gerona, especializada en el desarrollo, fabricación y venta de
@@ -169,7 +172,7 @@
                 <!-- Socio 8: 3M -->
                 <div class="card-socio">
                     <div class="socio-logo">
-                        <img src="img/3m.webp" alt="3M">
+                        <img src="img/3m.webp" loading="lazy" alt="3M">
                     </div>
                     <h3>3M</h3>
                     <p>Es una compañía multinacional dedicada a investigar, desarrollar, manufacturar y comercializar
@@ -186,7 +189,7 @@
                 <div class="footer-top-row">
                     <!--Columna 1-->
                     <div class="footer-col">
-                        <img src="img/Cemsapng.webp" alt="Logo CEMSA" class="footer-logo-img">
+                        <img src="img/Cemsapng.webp" loading="lazy" alt="Logo CEMSA" class="footer-logo-img">
                     </div>
 
                     <!--Columna 2-->
@@ -232,36 +235,42 @@
                         <div class="alianzas-fila-superior">
                             <div class="alianzas-bloque">
                                 <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
-                                    class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
+                                    class="alianza-logo glow-rojo"><img src="img/Urban.webp" loading="lazy"
+                                        alt="Urban"></a>
                                 <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
-                                    class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
+                                    class="alianza-logo glow-azul"><img src="img/Cemsa.webp" loading="lazy"
+                                        alt="CEMSA"></a>
                                 <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
-                                    class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
+                                    class="alianza-logo glow-blanco"><img src="img/Jarl.webp" loading="lazy"
+                                        alt="Jarl"></a>
                             </div>
 
                             <div class="alianzas-centro">
                                 <a href="G.html" target="_blank" class="alianza-logo alianza-principal glow-gris"><img
-                                        src="img/GC22.webp" alt="GC Grupo CEMSA"></a>
+                                        src="img/GC22.webp" loading="lazy" alt="GC Grupo CEMSA"></a>
                             </div>
 
                             <div class="alianzas-bloque">
                                 <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
-                                    class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
+                                    class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" loading="lazy"
+                                        alt="Nazareos"></a>
                                 <a href="https://www.facebook.com/nazareosac1" target="_blank"
-                                    class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp"
+                                    class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" loading="lazy"
                                         alt="Nazareos AC"></a>
                                 <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
-                                    class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
+                                    class="alianza-logo glow-verde"><img src="img/E&C.png" loading="lazy" alt="E&C"></a>
                             </div>
                         </div>
 
                         <div class="alianzas-fila-inferior">
                             <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
-                                class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
+                                class="alianza-logo glow-amarillo"><img src="img/EPP.webp" loading="lazy" alt="EPP"></a>
                             <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
-                                class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
+                                class="alianza-logo glow-celeste"><img src="img/Kumon.webp" loading="lazy"
+                                    alt="Kumon"></a>
                             <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
-                                class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
+                                class="alianza-logo glow-cian"><img src="img/Spacioss.png" loading="lazy"
+                                    alt="Spacioss"></a>
                         </div>
                     </div>
                 </div>

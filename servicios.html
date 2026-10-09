@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="servicios.css">
     <link rel="icon" href="img/cemsis.webp">
+    <!-- Preconexiones para acelerar carga externa -->
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
+    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
     <script>
@@ -25,7 +28,7 @@
         <div class="logo-container">
             <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
         </div>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
 
         <nav id="nav-menu">
             <ul>
@@ -52,7 +55,7 @@
                     facturación.
                 </p>
                 <div class="intro-imagen">
-                    <img src="img/Servicios.webp" alt="Servicios">
+                    <img src="img/Servicios.webp" loading="lazy" alt="Servicios">
                 </div>
             </div>
         </section>
@@ -82,7 +85,7 @@
                                 pintar, trabajan profesionales capacitados en cursos de hojalatería y pintura, quienes
                                 manejan a la perfección las diferentes técnicas que existen y las herramientas para
                                 hojalatería necesarias para la restauración de abolladuras, rayones y repintado.</p>
-                            <img src="img/Hojalatería y pintura.webp" alt="Hojalatería y pintura">
+                            <img src="img/Hojalatería y pintura.webp" loading="lazy"alt="Hojalatería y pintura">
                         </div>
                     </div>
                     <div class="panel-tab" id="panel-flotillas">
@@ -91,7 +94,7 @@
                             <p>Este servicio consiste en el repintado automotriz en el que favorece a las flotillas de
                                 vehículos o medios de cualquier transporte de los que dispone tu empresa además que se
                                 le da un tema estético o se puede usar como protección a los vehículos.</p>
-                            <img src="img/Flotillas.webp" alt="Flotillas">
+                            <img src="img/Flotillas.webp" loading="lazy" alt="Flotillas">
                         </div>
                     </div>
                     <div class="panel-tab" id="panel-igualacion">
@@ -101,7 +104,7 @@
                                 fórmulas actualizadas o si es necesario, mediante la igualación experimental real de
                                 colores de pintura en el laboratorio con el uso de sistemas específicos del cliente..
                             </p>
-                            <img src="img/Igualación.webp" alt="Igualación">
+                            <img src="img/Igualación.webp" loading="lazy" alt="Igualación">
                         </div>
                     </div>
                 </div>
@@ -133,7 +136,7 @@
                                 corrosión. AMPP nos proporciona conocimiento y los recursos para garantizar que se
                                 utilicen materiales de alto rendimiento para construir y mantener una infraestructura
                                 sostenible.x</p>
-                            <img src="img/AMPP.webp" alt="AMPP">
+                            <img src="img/AMPP.webp" loading="lazy" alt="AMPP">
                         </div>
                     </div>
                     <div class="panel-tab" id="panel-inspecciones">
@@ -143,7 +146,7 @@
                                 observación y dictamen, acompañada cuando sea apropiado por medición, ensayo/prueba o
                                 comparación con patrones, se brindan inspecciones de:
                                 Sales, Holydays, Aderehencia, Destructivas, Shoot Blash Y de Pureza,</p>
-                            <img src="img/Inspeccion.webp" alt="Inspección">
+                            <img src="img/Inspeccion.webp" loading="lazy" alt="Inspección">
                         </div>
                     </div>
                     <div class="panel-tab" id="panel-preparacion">
@@ -154,7 +157,7 @@
                                 estándares de organismos internacionales, el equipo de expertos que nos apoya cuenta con
                                 los conocimientos y certificaciones avalados por SSPC, NACE e ISO, necesarios para
                                 capacitarle.</p>
-                            <img src="img/Preparación de superficies.webp" alt="Preparación de superficies">
+                            <img src="img/Preparación de superficies.webp" loading="lazy" alt="Preparación de superficies">
                         </div>
                     </div>
                 </div>
@@ -183,7 +186,7 @@
                                 componentes de baja viscosidad y 100% sólidos, como un compuesto orgánico volátil, por
                                 lo que no representa ningún riesgo a la salud y puede aplicarse en la mayoría de los
                                 pisos, sean industriales o decorativos.</p>
-                            <img src="img/Pisos.webp" alt="Pisos">
+                            <img src="img/Pisos.webp" loading="lazy" alt="Pisos">
                         </div>
                     </div>
                     <div class="panel-tab" id="panel-pregrout">
@@ -192,7 +195,7 @@
                             <p>Pre-grout es un fluido denso que se endurece para llenar huecos o se utiliza como
                                 refuerzo en estructuras existentes. Es una técnica para reducir la entrada de agua en
                                 túneles y cavernas, inyectando fracturas y juntas antes de la excavación.</p>
-                            <img src="img/Pre-Grout.webp" alt="Pre-Grout">
+                            <img src="img/Pre-Grout.webp" loading="lazy" alt="Pre-Grout">
                         </div>
                     </div>
                     <div class="panel-tab" id="panel-siliconado">
@@ -201,7 +204,7 @@
                             <p>En CEMSA manejamos antiadherentes y flexibles y resistentes a altas temperaturas. Existen
                                 dos tipos: los que vulcanizan a altas temperaturas y los que vulcanizan a temperatura
                                 ambiente. Además, también presentan propiedades de sellado y aislamiento.</p>
-                            <img src="img/Recubrimiento siliconado.webp" alt="Recubrimiento siliconado">
+                            <img src="img/Recubrimiento siliconado.webp" loading="lazy" alt="Recubrimiento siliconado">
                         </div>
                     </div>
                 </div>
@@ -212,7 +215,7 @@
         <section class="seccion-soporte" id="soporte">
             <div class="cabecera-soporte">
                 <div class="icono-soporte">
-                    <img src="img/icono-soporte.png" alt="Icono Soporte">
+                    <img src="img/icono-soporte.png" loading="lazy" alt="Icono Soporte">
                 </div>
                 <div class="texto-soporte">
                     <span class="etiqueta-identidad azul-etiqueta">Soporte:</span>
@@ -395,7 +398,7 @@
             <div class="footer-top-row">
                 <!--Columna 1-->
                 <div class="footer-col">
-                    <img src="img/Cemsapng.webp" alt="Logo CEMSA" class="footer-logo-img">
+                    <img src="img/Cemsapng.webp" loading="lazy" alt="Logo CEMSA" class="footer-logo-img">
                 </div>
 
                 <!--Columna 2-->
@@ -432,35 +435,38 @@
                     <div class="alianzas-fila-superior">
                         <div class="alianzas-bloque">
                             <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
-                                class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
+                                class="alianza-logo glow-rojo"><img src="img/Urban.webp" loading="lazy" alt="Urban"></a>
                             <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
-                                class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
+                                class="alianza-logo glow-azul"><img src="img/Cemsa.webp" loading="lazy" alt="CEMSA"></a>
                             <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
-                                class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
+                                class="alianza-logo glow-blanco"><img src="img/Jarl.webp" loading="lazy" alt="Jarl"></a>
                         </div>
 
                         <div class="alianzas-centro">
                             <a href="G.html" target="_blank" class="alianza-logo alianza-principal glow-gris"><img
-                                    src="img/GC22.webp" alt="GC Grupo CEMSA"></a>
+                                    src="img/GC22.webp" loading="lazy" alt="GC Grupo CEMSA"></a>
                         </div>
 
                         <div class="alianzas-bloque">
                             <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
-                                class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
+                                class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" loading="lazy"
+                                    alt="Nazareos"></a>
                             <a href="https://www.facebook.com/nazareosac1" target="_blank"
-                                class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" alt="Nazareos AC"></a>
+                                class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" loading="lazy"
+                                    alt="Nazareos AC"></a>
                             <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
-                                class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
+                                class="alianza-logo glow-verde"><img src="img/E&C.png" loading="lazy" alt="E&C"></a>
                         </div>
                     </div>
 
                     <div class="alianzas-fila-inferior">
                         <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
-                            class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
+                            class="alianza-logo glow-amarillo"><img src="img/EPP.webp" loading="lazy" alt="EPP"></a>
                         <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
-                            class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
+                            class="alianza-logo glow-celeste"><img src="img/Kumon.webp" loading="lazy" alt="Kumon"></a>
                         <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
-                            class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
+                            class="alianza-logo glow-cian"><img src="img/Spacioss.png" loading="lazy"
+                                alt="Spacioss"></a>
                     </div>
                 </div>
             </div>

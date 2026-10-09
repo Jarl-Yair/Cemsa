@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/cemsis.webp">
-    <title>CEMSA </title>
+    <title>CEMSA</title>
+    <!-- Preconexiones para acelerar carga externa -->
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
+    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
     <script>
@@ -22,9 +25,9 @@
     <!--BARRA DE NAVEGACIÓN-->
     <header>
         <div class="logo-container">
-            <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
+            <img src="img/logoCemsa.webp" loading="lazy" alt="Logo CEMSA" class="logo-img">
         </div>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
 
         <nav id="nav-menu">
             <ul>
@@ -55,7 +58,7 @@
     <!--SECCIÓN BIENVENIDOS-->
     <section class="bienvenidos">
         <div class="bienvenidos-img">
-            <img src="img/CEMSA empresa.webp" alt="CEMSA empresa">
+            <img src="img/CEMSA empresa.webp" loading="lazy" alt="CEMSA empresa">
         </div>
         <div class="bienvenidos-texto">
             <span class="etiqueta-texto">BIENVENIDOS</span>
@@ -71,19 +74,27 @@
 
     <!--SECCIÓN DE SERVICIOS-->
     <section class="servicios">
-        <div class="servicios-cabecera">
-            <span class="etiqueta-texto gris">NUESTROS SERVICIOS</span>
-            <h2 class="titulo-seccion">¿Cómo podemos ayudarte?</h2>
-            <p class="subtitulo-seccion">Nos enfocamos en la compra, venta, distribución y aplicación de recubrimientos
-                industriales, arquitectónicos y automotrices comprometidas con el desarrollo de servicios cuyos costos y
-                calidades son comparables o superiores a los de nuestros competidores.</p>
-            <a href="servicios.html" class="btn-explorar btn-espaciado">Ver todos los servicios</a>
+        <div class="servicios-contenedor-flex">
+            <div class="servicios-cabecera">
+                <span class="etiqueta-texto gris">NUESTROS SERVICIOS</span>
+                <h2 class="titulo-seccion">¿Cómo podemos ayudarte?</h2>
+                <p class="subtitulo-seccion">Nos enfocamos en la compra, venta, distribución y aplicación de
+                    recubrimientos
+                    industriales, arquitectónicos y automotrices comprometidas con el desarrollo de servicios cuyos
+                    costos y
+                    calidades son comparables o superiores a los de nuestros competidores.</p>
+                <a href="servicios.html" class="btn-explorar btn-espaciado">Ver todos los servicios</a>
+            </div>
+
+            <div class="servicios-imagen">
+                <img src="img/aplicadorDeRecubrimientos.webp" loading="lazy" alt="Aplicador De Recubrimientos">
+            </div>
         </div>
 
         <div class="grid-servicios">
             <!--Tarjeta 1-->
             <div class="card-servicio">
-                <img src="img/Distribucion.webp" alt="CEMSA Distribución" class="img-destacada">
+                <img src="img/Distribucion.webp" loading="lazy" alt="CEMSA Distribución" class="img-destacada">
                 <h3>CEMSA</h3>
                 <p>Nos enfocamos en la compra, venta, distribución y aplicación de recubrimientos industriales,
                     arquitectónicos y automotrices comprometidas con el desarrollo de servicios cuyos costos y calidades
@@ -92,7 +103,7 @@
 
             <!--Tarjeta 2-->
             <div class="card-servicio">
-                <img src="img/Granallado.webp" alt="Sectores Económicos" class="img-destacada">
+                <img src="img/Granallado.webp" loading="lazy" alt="Sectores Económicos" class="img-destacada">
                 <h3>Sectores Económicos</h3>
                 <p>Comercializamos recubrimientos para industria civil, marina, petroquímica, energía, petróleo y gas,
                     offshore e industria ferroviariamas y mas.</p>
@@ -100,7 +111,7 @@
 
             <!--Tarjeta 3-->
             <div class="card-servicio">
-                <img src="img/Equipo.webp" alt="Soluciones Integrales" class="img-destacada">
+                <img src="img/Equipo.webp" loading="lazy" alt="Soluciones Integrales" class="img-destacada">
                 <h3>Soluciones Integrales</h3>
                 <p>Equipo técnico para aplicación en campo. Equipo e Infraestructura para la aplicación de nuestros
                     productos.</p>
@@ -108,7 +119,7 @@
 
             <!--Tarjeta 4-->
             <div class="card-servicio">
-                <img src="img/Descuento.webp" alt="Descuento" class="img-destacada">
+                <img src="img/Descuento.webp" loading="lazy" alt="Descuento" class="img-destacada">
                 <h3>Descuentos</h3>
                 <p>Encuentre las mejores promociones y descuentos especiales que tenemos para nuestros clientes.</p>
             </div>
@@ -128,17 +139,17 @@
 
         <div class="carrusel-grande">
             <div class="carrusel-slides">
-                <img src="img/sikkens1.webp" alt="sikkens" class="slide activa">
-                <img src="img/wanda2.webp" alt="wanda" class="slide">
-                <img src="img/hempel2.webp" alt="Hempel" class="slide">
-                <img src="img/u-tech1.webp" alrt="U-Tech" class="slide">
-                <img src="img/internacional1.webp" alt="Internacional" class="slide">
+                <img src="img/sikkens1.webp" loading="lazy" alt="sikkens" class="slide activa">
+                <img src="img/wanda2.webp" loading="lazy" alt="wanda" class="slide">
+                <img src="img/hempel2.webp" loading="lazy" alt="Hempel" class="slide">
+                <img src="img/u-tech1.webp" loading="lazy" alt="U-Tech" class="slide">
+                <img src="img/internacional1.webp" loading="lazy" alt="Internacional" class="slide">
             </div>
             <div class="centrar-boton">
                 <a href="productos.html" class="btn-explorar btn-espaciado">Ver todos los productos</a>
             </div>
-            <button class="btn-circular prev" onclick="moverCarrusel(-1)">❮</button>
-            <button class="btn-circular next" onclick="moverCarrusel(1)">❯</button>
+            <button class="btn-circular prev" onclick="moverCarrusel(-1)" aria-label="Ver imagen anterior">❮</button>
+            <button class="btn-circular next" onclick="moverCarrusel(1)" aria-label="Ver siguiente imagen">❯</button>
         </div>
     </section>
 
@@ -175,21 +186,24 @@
         <div class="grid-conocenos">
             <!--Tarjeta Misión-->
             <div class="card-conocenos">
-                <img src="https://cdn-icons-png.flaticon.com/512/702/702797.png" alt="Misión" class="img-conocenos">
+                <img src="https://cdn-icons-png.flaticon.com/512/702/702797.png" loading="lazy" alt="Misión"
+                    class="img-conocenos">
                 <h3>MISIÓN</h3>
                 <p>Distribuir productos y servicios de calidad, generando valor para nuestros grupos de interés,
                     inspirando orgullo, pasión y compromiso.</p>
             </div>
             <!--Tarjeta Visión-->
             <div class="card-conocenos">
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135691.png" alt="Visión" class="img-conocenos">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135691.png" loading="lazy" alt="Visión"
+                    class="img-conocenos">
                 <h3>VISIÓN</h3>
                 <p>En el 2025 será líder en la aplicación y distribución de recubrimientos, en un entorno seguro de
                     acuerdo con las NOM'S aplicables.</p>
             </div>
             <!--Tarjeta Valores-->
             <div class="card-conocenos">
-                <img src="https://cdn-icons-png.flaticon.com/512/806/806132.png" alt="Valores" class="img-conocenos">
+                <img src="https://cdn-icons-png.flaticon.com/512/806/806132.png" loading="lazy" alt="Valores"
+                    class="img-conocenos">
                 <h3>VALORES</h3>
                 <p>Valores como la honestidad, responsabilidad, compromiso, calidad humana, igualdad de oportunidades, y
                     la capacitación permanente.
@@ -209,7 +223,7 @@
                     así como
                     el apoyo para que su negocio sea más eficiente en tiempos y rentable en costos.
                 </p>
-                <a href="servicios.html#soporte" class="btn-explorar btn-espaciado">Ver más... →</a>
+                <a href="servicios.html#soporte" class="btn-explorar btn-espaciado">Ver mas... →</a>
             </div>
 
             <div class="columna-info">
@@ -226,15 +240,16 @@
     <!--SECCIÓN DE REDES, CONTACTO Y CV-->
     <section class="seccion-interaccion">
         <div class="grid-interaccion">
+
             <div class="card-interaccion">
                 <div class="cabecera-azul">Síguenos</div>
                 <p class="desc-interaccion">Síguenos en todas nuestras redes sociales</p>
                 <div class="embed-redes"
                     style="display: flex; justify-content: center; border-radius: 8px; overflow: hidden; background-color: #f0f2f5;">
-                    <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/CEMSARecubrimientos&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+                    <iframe title="Widget de publicaciones de Facebook"
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCEMSARecubrimientos&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
                         width="100%" height="300" style="border:none;overflow:hidden; max-width: 340px;" scrolling="no"
-                        frameborder="0" allowfullscreen="true"
+                        frameborder="0" allowfullscreen="true" loading="lazy"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                     </iframe>
                 </div>
@@ -310,7 +325,6 @@
 
         </div>
 
-        </div>
     </section>
 
     <!--SECCIÓN DE CONTACTO-->
@@ -353,8 +367,8 @@
 
             <!--Mapa de Google-->
             <div class="contacto-mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039216.3805886307!2d-103.45600064120228!3d19.74624343514143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f440306156a3%3A0x17e336b2b2b06844!2sCEMSA%20Recubrimientos!5e1!3m2!1ses!2smx!4v1791310136724!5m2!1ses!2smx"
+                <iframe title="Mapa de CEMSA Recubrimientos"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.508550017071!2d-99.1251493163952!3d19.64829756894484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f440306156a3%3A0x17e336b2b2b06844!2sCEMSA%20Recubrimientos!5e0!3m2!1ses!2smx!4v1657134794102!5m2!1ses!2smx"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="strict-origin-when-cross-origin">
                 </iframe>
@@ -368,7 +382,7 @@
             <div class="footer-top-row">
                 <!--Columna 1-->
                 <div class="footer-col">
-                    <img src="img/Cemsapng.webp" alt="Logo CEMSA" class="footer-logo-img">
+                    <img src="img/Cemsapng.webp" loading="lazy" alt="Logo CEMSA" class="footer-logo-img">
                 </div>
 
                 <!--Columna 2-->
@@ -395,6 +409,16 @@
                         <a href="https://x.com/cemsamx?lang=es" target="_blank" class="icono-red">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
                         </a>
+
+                        <a href="" target="_blank" class="icono-red">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                                alt="YouTube">
+                        </a>
+
+                        <a href="" target="_blank" class="icono-red">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                                alt="Instagram">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -405,35 +429,38 @@
                     <div class="alianzas-fila-superior">
                         <div class="alianzas-bloque">
                             <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
-                                class="alianza-logo glow-rojo"><img src="img/Urban.webp" alt="Urban"></a>
+                                class="alianza-logo glow-rojo"><img src="img/Urban.webp" loading="lazy" alt="Urban"></a>
                             <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
-                                class="alianza-logo glow-azul"><img src="img/Cemsa.webp" alt="CEMSA"></a>
+                                class="alianza-logo glow-azul"><img src="img/Cemsa.webp" loading="lazy" alt="CEMSA"></a>
                             <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
-                                class="alianza-logo glow-blanco"><img src="img/Jarl.webp" alt="Jarl"></a>
+                                class="alianza-logo glow-blanco"><img src="img/Jarl.webp" loading="lazy" alt="Jarl"></a>
                         </div>
 
                         <div class="alianzas-centro">
                             <a href="G.html" target="_blank" class="alianza-logo alianza-principal glow-gris"><img
-                                    src="img/GC22.webp" alt="GC Grupo CEMSA"></a>
+                                    src="img/GC22.webp" loading="lazy" alt="GC Grupo CEMSA"></a>
                         </div>
 
                         <div class="alianzas-bloque">
                             <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
-                                class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" alt="Nazareos"></a>
+                                class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" loading="lazy"
+                                    alt="Nazareos"></a>
                             <a href="https://www.facebook.com/nazareosac1" target="_blank"
-                                class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" alt="Nazareos AC"></a>
+                                class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" loading="lazy"
+                                    alt="Nazareos AC"></a>
                             <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
-                                class="alianza-logo glow-verde"><img src="img/E&C.png" alt="E&C"></a>
+                                class="alianza-logo glow-verde"><img src="img/E&C.png" loading="lazy" alt="E&C"></a>
                         </div>
                     </div>
 
                     <div class="alianzas-fila-inferior">
                         <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
-                            class="alianza-logo glow-amarillo"><img src="img/EPP.webp" alt="EPP"></a>
+                            class="alianza-logo glow-amarillo"><img src="img/EPP.webp" loading="lazy" alt="EPP"></a>
                         <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
-                            class="alianza-logo glow-celeste"><img src="img/Kumon.webp" alt="Kumon"></a>
+                            class="alianza-logo glow-celeste"><img src="img/Kumon.webp" loading="lazy" alt="Kumon"></a>
                         <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
-                            class="alianza-logo glow-cian"><img src="img/Spacioss.png" alt="Spacioss"></a>
+                            class="alianza-logo glow-cian"><img src="img/Spacioss.png" loading="lazy"
+                                alt="Spacioss"></a>
                     </div>
                 </div>
             </div>
@@ -447,42 +474,47 @@
         </div>
     </footer>
 
-    <!--SISTEMA DE COOKIES-->
-    <!-- 1.Conguracion de google analytics-->
+    <!--SISTEMA DE COOKIES y GOOGLE ANALYTICS-->
+
+    <!-- 1. Configuración de Google Analytics (Consent Mode) -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        //Revisa si el usuario ya ha dado su consentimiento previamente, si no bloquea el rastreo hasta que se otorgue el consentimiento
-        let estadoPrevio = localStorage.getItem('estadoCookies') == 'true' ? 'granted' : 'denied';
-        gtag('js', new Date());
-        gtag('config', 'G-CVL1WCKRJ7');
+
+        // Revisa si el usuario ya había aceptado antes; si no, bloquea el rastreo por defecto
+        let estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied';
+
+        gtag('consent', 'default', {
+            'analytics_storage': estadoPrevio
+        });
     </script>
 
-    <!--Etiqueta original de gtag.js-->
+    <!-- Tu etiqueta original de gtag.js -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
     <script>
         gtag('js', new Date());
         gtag('config', 'G-CVL1WCKRJ7');
     </script>
 
-    <!--2.BANNER PRINCIPAL-->
+    <!-- 2. Banner Principal -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-texto">
-            <h3 style="margin-top: 0; color:var(--color-azul)">Privacidad y Cookies</h3>
+            <h3 style="margin-top:0; color:var(--color-azul);">Privacidad y Cookies</h3>
             <p>Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte contenido personalizado.
                 Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias.</p>
         </div>
-        <div class="cookies-botones">
+        <div class="cookie-botones">
             <button id="btn-configurar" class="btn-cookie btn-secundario">Configurar</button>
             <button id="btn-rechazar" class="btn-cookie btn-secundario">Rechazar</button>
             <button id="btn-aceptar" class="btn-cookie btn-principal">Aceptar Todas</button>
         </div>
     </div>
-    <!--3. Modal de configuración-->
+
+    <!-- 3. Modal de Configuración -->
     <div id="cookie-modal" class="cookie-modal">
         <div class="cookie-modal-contenido">
-            <h3 style="color:var(--color-azul); margin-top: 0;">Configuración de Cookies</h3>
-            <p style="font-size: 0.9rem; color: #555;">Selecciona qué tipo de cookies deseas permitir en tu navegador.
+            <h3 style="color:var(--color-azul); margin-top:0;">Configuración de Cookies</h3>
+            <p style="font-size: 0.9rem; color: #555;">Selecciona qué tipo de cookies deseas permitir en tu navegador:
             </p>
 
             <div class="opcion-cookie">
@@ -492,6 +524,7 @@
                 </label>
                 <p>Son necesarias para que la página funcione. No se pueden desactivar.</p>
             </div>
+
             <div class="opcion-cookie">
                 <label>
                     <input type="checkbox" id="check-analiticas" checked>
@@ -505,51 +538,50 @@
         </div>
     </div>
 
-    <!--4. Lógica de los bortones-->
+    <!-- 4. Lógica de los botones -->
     <script>
         const bannerCookies = document.getElementById('cookie-banner');
         const modalCookies = document.getElementById('cookie-modal');
 
-        //Muestra el banner si es la primera vez que entra 
-        if (!localStorage.getItem('cookies-banner')) {
+        // Muestra el banner si es la primera vez que entra
+        if (!localStorage.getItem('estadoCookies')) {
             bannerCookies.classList.add('activo');
         }
 
-        //Funión para activar Google Analytics y guardar el estado en localStorage
+        // Función para activar Google Analytics y guardar en localStorage
         function activarAnalytics(permitir) {
             const estado = permitir ? 'granted' : 'denied';
             gtag('consent', 'update', { 'analytics_storage': estado });
             localStorage.setItem('cookiesAnaliticas', permitir.toString());
         }
 
-        //Botómn Aceptar Todas
+        // Botón Aceptar Todas
         document.getElementById('btn-aceptar').addEventListener('click', () => {
             localStorage.setItem('estadoCookies', 'aceptadas');
             activarAnalytics(true);
             bannerCookies.classList.remove('activo');
         });
 
-        //Botón Rechazar
+        // Botón Rechazar
         document.getElementById('btn-rechazar').addEventListener('click', () => {
             localStorage.setItem('estadoCookies', 'rechazadas');
             activarAnalytics(false);
             bannerCookies.classList.remove('activo');
         });
 
-        //Botones de configuración
+        // Botones de Configuración
         document.getElementById('btn-configurar').addEventListener('click', () => {
             modalCookies.classList.add('activo');
         });
 
         document.getElementById('btn-guardar-config').addEventListener('click', () => {
-            const analisticasActivadas = document.getElementById('check-analiticas').checked;
+            const analiticasActivadas = document.getElementById('check-analiticas').checked;
             localStorage.setItem('estadoCookies', 'personalizadas');
-            activarAnalytics(analisticasActivadas);
+            activarAnalytics(analiticasActivadas);
             modalCookies.classList.remove('activo');
             bannerCookies.classList.remove('activo');
         });
     </script>
-
 
     <!--SCRIPT PARA EL FUNCIONAMIENTO DEL CARRUSEL-->
     <script>
